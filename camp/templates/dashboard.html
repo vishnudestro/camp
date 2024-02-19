@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="stylesheet" href="/static/css/style.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+        <link rel="stylesheet" href="/static/common_lib/css/flexdatalist.css">
+        <title>Home</title>
+    <style>
+        body,html{
+            width: 100%;
+            height: 100%;
+            background-color: #f6f2ef
+        }
+    </style>
+    </head>
+    <body>
+        <div class="container home-styles">
+            <div class="row" style="margin-top:12px;">
+                <div class="col-sm-5 col-md-5">
+                </div>
+                <div class="col-sm-1 col-md-1">
+                    <h1><a style="color:#283c4b;" href="{{url_for('CAMP.dashboard', user_id = current_user.id)}}">Home</a></h1>
+                </div>
+                <div class="col-sm-1 col-md-1">
+                    <h1 id="ping" style="cursor:pointer">Pings</h1>
+                </div>
+                <div class="col-sm-5 col-md-5" style="text-align:center">
+                    <a href="{{url_for('CAMP.invite_people', user_id = current_user.id, company_id = current_user.company_id)}}" style="color:#283c4b;font-weight: 600;">Invite People</a>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm col-md">
+                </div>
+                <div class="col-sm-8 col-md-8">
+                    <div id="ping-selection" style="width:100%;height:100px;background-color:#ffffff;box-shadow: 0 0 4px rgba(0,0,0,0.15),0 5px 10px rgba(0,0,0,0.05);border: 0;border-radius: 4px;padding: 25px;display: none">
+                        <div style="display:flex;width:100%;box-shadow: 0 0 6px rgba(27,106,201,0.5);outline: none;border: 1px solid #a4d2ff;">
+                            <input placeholder="Start a private chat with..." width="80%" id="chat-room" type='text' class='flexdatalist' data-min-length='1' multiple='multiple' data-selection-required='1' data-value-property='id' list='chat_names' name='language22' >
+                            <datalist id="chat_names" style="border:none">
+                                {% for people in output['hq']['people_list'] %}
+                                    {% if people._id|string != current_user.id|string %}
+                                        <option value="{{people._id}}">{{people.person_name}}</option>
+                                    {% endif %}
+                                {% endfor %}
+                            </datalist> 
+                            <button id="ping-button" style="background-color: #596568;color: #fff;width:20%;border: 1px solid #596568;font-size: 12px;display: none" onclick="addPeopleTOChat('{{output.hq._id}}','{{current_user.id}}')" type="submit">Ping 'em</button>
+                        </div>
+                    </div>  
+                </div>
+                <div class="col-sm col-md">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm">
+                </div>
+                <div class="col-sm-8 card-design">
+                    <div class="row card-spacing">
+                        <div class="col-sm-12">
+                            <h6>{{output['hq']['name']}}</h6>
+                        </div>
+                    </div>
+                    <div class="row common-card">
+                        <div class="col-sm-8 col-md-8">
+                        </div>
+                        <div class="col-sm-4 col-md-4" >
+                            <div class="card" style="width: auto;">
+                                <div class="card-body">
+                                    <h5 class="card-title"><a style="color: #283c46" href='{{ output.hq.url }}'>{{ output['hq']['name'] }}</a></h5>
+                                    <p class="card-text">Company-wide announcements and stuff everyone needs to know.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Teams -->
+                    <div class="row card-spacing">
+                        <div class="col-sm-4 col-md-4" style="padding: 0 !important">
+                            <button type="button" onclick="showTeamCard()" style="outline: 0"><span style="color:#2da562;font-weight:bold;font-size: 20px;outline: 0">&#43;</span><span style="margin: 0 0 0 5px;">New</span></button>
+                            <!-- add team-card -->
+                            <div class="card common-card append-card" id="team-card" style="width: auto;">
+                                <div class="card-body">
+                                    <input type="text" placeholder="Name this team" id="team-name">
+                                    <button type="button" id="save-team">Save</button>
+                                    <button type="button" id="cancel-save-team" style="background-color:white;color:#2da562;outline: 0">Cancel</button>
+                                </div>
+                            </div>
+                            <!-- end of add-team-card -->
+                        </div>
+                        <div class="col-sm-4 col-md-4">
+                            <h6>Teams</h6>
+                        </div>
+                        <div class="col-sm-4 col-md-4">
+                        </div>
+                    </div>
+                    <div class="row common-card card-deck" id="teamList">
+                        <!-- start -->
+                        {% for team in output['team']%}
+                            <div id="team-{{team._id}}" class="col-sm-4 col-md-4">
+                                <div class="card" style="width: auto; position: relative;overflow: hidden;border-radius: 8px;">
+                                    <div class="card-body">
+                                        <div style="display: flex;justify-content: space-between">
+                                            <h5 class="card-title">
+                                                <a id="teamname-{{team._id}}" style="color: #283c46" href='{{ team.url }}'>{{ team['name'] }}</a>
+                                            </h5>
+                                            <img onclick="showTeamOptions('{{team._id}}')" style="cursor:pointer" src="/static/images/horizontal.svg">
+                                        </div>
+                                        <p class="card-text">Company-wide announcements and stuff everyone needs to know.</p>
+                                    </div>
+                                    <!-- Team options division -->
+                                    <div id="{{team._id}}" class="card-body" style="position:absolute; left: 250px;width: 100%;height: 118px;background-color: white;transition: 0.3s;padding: 0">
+                                        <div style="display: flex;justify-content: space-between;margin-bottom: 8px;padding: 1.25rem 1.25rem 0 1.25rem">
+                                            <h5 class="card-title">
+                                                <a style="color: #283c46">{{ team['name'] }}</a>
+                                            </h5>
+                                            <img onclick="hideTeamOptions('{{team._id}}')" style="cursor:pointer" src="/static/images/close.svg">
+                                        </div>
+                                        <div onclick="teamRename('{{team._id}}', '{{team.name}}')" class="team-option-hover" style="display:flex;padding: 4px 20px;">
+                                            <img style="margin-right: 8px;" src="/static/images/rename.svg">
+                                            <p style="color:#070707;font-size:12px;margin: 0;padding:2px">Rename this team</p>
+                                        </div>
+                                        <div onclick="deleteTeamCard('{{team._id}}')" class="team-option-hover" style="display:flex;padding: 4px 20px;">    
+                                            <img style="margin-right: 8px;" src="/static/images/delete.svg">
+                                            <p style="color:#283c46;font-size:12px; margin: 0;padding: 2px;">Delete it...</p>
+                                        </div>
+                                    </div>
+                                    <!-- end of team option  -->
+                                    <!-- Team rename -->
+                                    <div id="r-{{team._id}}" class="card-body" style="position:absolute;left:250px;width: 100%;height: 118px;background-color: white;transition: 0.3s;padding: 0">
+                                        <div style="display: flex;justify-content: space-between;padding: 1.25rem 1.25rem 0 1.25rem">
+                                            <input id="i-{{team._id}}" class="renameInput" type="text" placeholder="Name this team">
+                                        </div>
+                                        <div style="display:flex;padding: 4px 20px;">
+                                            <button onclick="updateTeamName('{{team._id}}','i-{{team._id}}')" type="button" style="background-color: #596568;border-radius: 24px;border: 1px solid #596568;color:white;font-size:12px;padding: 6px 12px;margin-right: 4px;">Save</button>
+                                            <button onclick="hideteamRename('{{team._id}}')" type="button" style="background-color: #fff;border-radius: 24px;outline:0;border: 1px solid #596568;color:#596568;font-size:12px;padding: 6px 12px;">Cancel</button>
+                                        </div>
+                                    </div>
+                                    <!--end of team rename -->
+                                </div>
+                            </div>
+                        {% endfor %}
+                        <!-- end -->
+                    </div>
+                    <!-- Projects -->
+                    <div class="row card-spacing">
+                        <div class="col-sm-4" style="padding: 0 !important">
+                            <button type="button" onclick="showProjectCard()" style="outline: 0"><span style="color:#2da562;font-weight:bold;font-size: 20px;outline: 0">&#43;</span><span style="margin: 0 0 0 5px;">New</span></button>
+                            <!-- add project-card -->
+                            <div class="card common-card append-card" id="project-card" style="width: auto;">
+                                    <div class="card-body">
+                                        <input type="text" placeholder="Name this project" id="project-name">
+                                        <button type="button" id="save-project">Save</button>
+                                        <button type="button" id="cancel-save-project" style="background-color:white;color:#2da562;outline: 0">Cancel</button>
+                                    </div>
+                                </div>
+                            <!-- end of add-project-card -->
+                        </div>
+                        <div class="col-sm-4">
+                            <h6>Projects</h6>
+                        </div>
+                        <div class="col-sm">
+                        </div>
+                    </div>
+                    <div class="row common-card card-deck" id="projectList">
+                        <!-- start -->
+                        {% for project in output['projects']%}
+                            <div id="project-{{project._id}}" class="col-sm-4 col-md-4">
+                                <div class="card" style="width: auto;position: relative;overflow: hidden;">
+                                    <div class="card-body">
+                                        <div style="display: flex;justify-content: space-between">
+                                            <h5 class="card-title">
+                                                <a style="color: #283c46" href='{{ project.url }}'>{{ project['name'] }}</a>
+                                            </h5>
+                                            <img onclick="showProjectOptions('{{project._id}}')" style="cursor:pointer" src="/static/images/horizontal.svg">
+                                        </div>
+                                        <p class="card-text">Company-wide announcements and stuff everyone needs to know.</p>
+                                    </div>
+                                    <!-- project options division -->
+                                    <div id="{{project._id}}" class="card-body" style="position:absolute; left: 250px;width: 100%;height: 118px;background-color: white;transition: 0.3s;padding: 0">
+                                        <div style="display: flex;justify-content: space-between;margin-bottom: 8px;padding: 1.25rem 1.25rem 0 1.25rem">
+                                            <h5 class="card-title">
+                                                <a id="projectname-{{project._id}}" style="color: #283c46">{{ project['name'] }}</a>
+                                            </h5>
+                                            <img onclick="hideTeamOptions('{{project._id}}')" style="cursor:pointer" src="/static/images/close.svg">
+                                        </div>
+                                        <div onclick="teamRename('{{project._id}}', '{{project.name}}')" class="team-option-hover" style="display:flex;padding: 4px 20px;">
+                                            <img style="margin-right: 8px;" src="/static/images/rename.svg">
+                                            <p style="color:#070707;font-size:12px;margin: 0;padding:2px">Rename this project</p>
+                                        </div>
+                                        <div onclick="deleteProjectCard('{{project._id}}')" class="team-option-hover" style="display:flex;padding: 4px 20px;">
+                                            <img style="margin-right: 8px;" src="/static/images/delete.svg">
+                                            <p style="color:#283c46;font-size:12px; margin: 0;padding: 2px;">Delete it...</p>
+                                        </div>
+                                    </div>
+                                    <!-- end of team option  -->
+                                    <!-- Team rename -->
+                                    <div id="r-{{project._id}}" class="card-body" style="position:absolute;left:250px;width: 100%;height: 118px;background-color: white;transition: 0.3s;padding: 0">
+                                        <div style="display: flex;justify-content: space-between;padding: 1.25rem 1.25rem 0 1.25rem">
+                                            <input id="i-{{project._id}}" class="renameInput" type="text" placeholder="Name this project">
+                                        </div>
+                                        <div style="display:flex;padding: 4px 20px;">
+                                            <button onclick="updateProjectName('{{project._id}}','i-{{project._id}}')" type="button" style="background-color: #596568;border-radius: 24px;border: 1px solid #596568;color:white;font-size:12px;padding: 6px 12px;margin-right: 4px;">Save</button>
+                                            <button onclick="hideteamRename('{{project._id}}')" type="button" style="background-color: #fff;border-radius: 24px;outline:0;border: 1px solid #596568;color:#596568;font-size:12px;padding: 6px 12px;">Cancel</button>
+                                        </div>
+                                    </div>
+                                    <!--end of team rename -->
+                                </div>
+                            </div>
+                        {% endfor %}
+                        <!-- end -->    
+                    </div>
+                </div>
+                <div class="col-sm">
+                </div>
+            </div>
+        </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="/static/common_lib/js/flexdatalist.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.0/jquery-ui.js"></script>
+    <script src="/static/js/register-page.js"></script>
+    </body>
+</html>

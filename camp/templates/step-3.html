@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="stylesheet" href="/static/css/style.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+        <title>step-3</title>
+    </head>
+    <style>
+        body,html{
+            width: 100%;
+            height: 100%;
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #f6f2ef
+        }
+    </style>
+    <body>
+        <div class="pannel-top pannel">
+            <header class="center">
+                <img width="98" height="78" src="/static/images/logo.svg">
+                <h1 class="pannel-header">Just a few quick things to set up your account…</h1>
+            </header>
+            <!-- form section -->
+            <div class="center welcome-step-1">
+                <form id="card-3" class="wc-1" method="POST" action="{{url_for('CAMP.team', user_id = user_id, company_id = company_id)}}">
+                    <div class="card-1">
+                        <div class="step-div">
+                            <span  class="card-step">Step 3 of 5</span>
+                        </div>
+                        <h1>Do you have any of these teams at your company?</h1>
+                        <p>We’ll give you a head start and set them up for you. You can always add more or change these later.</p>
+                        <div class="row">
+                            <label class="setcheckaccount">
+                                <input type="checkbox"  id="Sales" name="team" value="sales">Sales
+                                <span class="checkmark"></span>
+                            </label>
+                        </div>
+                        <div class="row">
+                            <label class="setcheckaccount">
+                                <input type="checkbox"  id="R&D" name="team" value="r_and_d">R&D
+                                <span class="checkmark"></span>
+                            </label>
+                        </div>
+                        <div class="row">
+                            <label class="setcheckaccount">
+                                <input type="checkbox"  id="Marketing" name="team" value="marketing">Marketing
+                                <span class="checkmark"></span>
+                            </label>
+                        </div>
+                        <div class="row">
+                            <label class="setcheckaccount">
+                                <input type="checkbox"  id="Managers" name="team" value="managers">Managers
+                                <span class="checkmark"></span>
+                            </label>
+                        </div>
+                        <div class="row">
+                            <label class="setcheckaccount">
+                                <input type="checkbox" id="Finance" name="team" value="finance">Finance
+                                <span class="checkmark"></span>
+                            </label>
+                        </div>
+                        <button type="submit">Next →</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="/static/js/register-page.js"></script>
+    </body>
+</html>

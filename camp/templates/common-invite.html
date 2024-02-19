@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="stylesheet" href="/static/css/style.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+        <link rel="stylesheet" href="/static/common_lib/css/flexdatalist.css">
+        <title>To-do</title>
+    <style>
+        body,html{
+            width: 100%;
+            height: 100%;
+            background-color: #f6f2ef
+        }
+    </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 col-md-12" style="text-align: center;font-size:16px;font-weight:bold;color: #596568;margin: 8px 0 0 0;">
+                    <a style="color: #596568" href="{{url_for('CAMP.dashboard', user_id = current_user.id)}}">Home</a>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm col-md">
+                </div>
+                <div class="col-sm-9 col-md-9 navBar">
+                    <h6><a href="{{output.url}}">{{output.name}}</a></h6>
+                </div>
+                <div class="col-sm col-md">
+                </div>
+            </div>
+            <div class="row to-do-row">
+                <div class="col-md">
+                </div>
+                <div class="col-md-10 to-do-card">
+                    <div class="row card-title">
+                        <div class="col-md" style="padding:0;">
+                            <button id="show-invite-list" type="button" style="background-color: #2da562;border-color: #2da562;color: #fff;">Add people...</button>
+                        </div>
+                        <div class="col-md-8" style="padding:0;">
+                            <h6>{{output.name}} members</h6>
+                        </div>
+                        <div class="col-md" style="padding:0;">
+
+                        </div>
+                    </div>
+                    <!-- input card -->
+                    <div class="row invite-card-body" id="#invite-card-body">
+                        <div class="col-md-12  input-card-list">
+                            <div class="row" style="padding:20px;">
+                                <div class="col-md-12">
+                                    <input id="invite-name" type='text' placeholder='Name' class='flexdatalist' data-min-length='1' multiple='multiple' data-selection-required='1' data-value-property='email' list='assign_names' name='language22'>
+                                    <datalist id="assign_names">
+                                        {% for user in output['company_peoples'] %}
+                                            <option value="{{user._id}}">{{user.person_name}}</option>
+                                        {% endfor %}    
+                                    </datalist> 
+                                </div>
+                            </div>
+                            <!-- <div class="row" style="padding:0 20px 20px 20px;">
+                                <div class="col-md-12">
+                                    <input id="invite-email" type="text" placeholder="Email">
+                                </div>
+                            </div> -->
+                            <div class="row" style="padding:0 10px 16px 10px;">
+
+                                <div class="col-md-12">
+                                    <button id="invite-submit" onclick="addInvitePeople('{{output._id}}')" type="button" style="outline:none">Add</button>
+                                    <button id="hide-invite" type="button" style="outline:none">Cancel</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end of card -->
+                    <div class="col-sm-12 col-md-12">
+                        <div class="row" id="invitesection"  style="margin-top:30px;">
+                            {% for data in output['people_list'] %}
+                                <div class="col-sm-6 col-md-6" style="padding:0">
+                                    <div class="card" style="width: auto;margin:4px;height: 130px;">
+                                        <div class="card-body">
+                                            <h5 style="color:#283c46;font-weight: bold;font-size: 22px;">{{ data['person_name'] }}</h5>
+                                            <h5 style="color:#2e3c46;font-size:18px">{{ data['email'] }}</h5>
+                                            {% if data.job_title != "" %}
+                                                <h5 style="color:#2e3c46;font-size:18px">{{ data['job_title'] }}</h5>
+                                            {% endif %}
+                                        </div>
+                                    </div>
+                                </div>
+                            {% endfor %}
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md">
+                </div>
+            </div>
+        </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="/static/common_lib/js/flexdatalist.js"></script>
+    <script src="/static/js/register-page.js"></script>
+    </body>
+</html>

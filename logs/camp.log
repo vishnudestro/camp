@@ -1,0 +1,899 @@
+2019-10-08 17:23:05,026 werkzeug          line:122  INFO      * Running on http://0.0.0.0:2000/ (Press CTRL+C to quit)
+2019-10-08 17:23:05,029 werkzeug          line:122  INFO      * Restarting with stat
+2019-10-08 17:23:05,745 werkzeug          line:122  WARNING   * Debugger is active!
+2019-10-08 17:23:05,756 werkzeug          line:122  INFO      * Debugger PIN: 203-563-375
+2019-10-08 17:23:39,455 werkzeug          line:122  INFO     127.0.0.1 - - [08/Oct/2019 17:23:39] "GET /login HTTP/1.1" 200 -
+2019-10-08 17:23:40,567 werkzeug          line:122  INFO     127.0.0.1 - - [08/Oct/2019 17:23:40] "GET / HTTP/1.1" 302 -
+2019-10-08 17:23:40,576 werkzeug          line:122  INFO     127.0.0.1 - - [08/Oct/2019 17:23:40] "GET /login HTTP/1.1" 200 -
+2019-10-08 17:23:40,662 werkzeug          line:122  INFO     127.0.0.1 - - [08/Oct/2019 17:23:40] "GET /static/css/style.css HTTP/1.1" 200 -
+2019-10-08 17:23:40,664 werkzeug          line:122  INFO     127.0.0.1 - - [08/Oct/2019 17:23:40] "GET /static/images/logo.svg HTTP/1.1" 200 -
+2019-10-08 17:23:40,665 werkzeug          line:122  INFO     127.0.0.1 - - [08/Oct/2019 17:23:40] "GET /static/js/register-page.js HTTP/1.1" 200 -
+2019-10-08 17:23:42,338 werkzeug          line:122  INFO     127.0.0.1 - - [08/Oct/2019 17:23:42] "GET /favicon.ico HTTP/1.1" 404 -
+2019-10-08 17:23:43,480 werkzeug          line:122  INFO     127.0.0.1 - - [08/Oct/2019 17:23:43] "GET /login HTTP/1.1" 200 -
+2019-10-08 17:24:19,821 werkzeug          line:122  INFO     127.0.0.1 - - [08/Oct/2019 17:24:19] "POST /login HTTP/1.1" 500 -
+2019-10-08 17:24:19,840 werkzeug          line:122  INFO     127.0.0.1 - - [08/Oct/2019 17:24:19] "GET /login?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+2019-10-08 17:24:19,842 werkzeug          line:122  INFO     127.0.0.1 - - [08/Oct/2019 17:24:19] "GET /login?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+2019-10-08 17:24:19,851 werkzeug          line:122  INFO     127.0.0.1 - - [08/Oct/2019 17:24:19] "GET /login?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+2019-10-08 17:24:19,884 werkzeug          line:122  INFO     127.0.0.1 - - [08/Oct/2019 17:24:19] "GET /login?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1" 200 -
+2019-10-08 17:24:19,969 werkzeug          line:122  INFO     127.0.0.1 - - [08/Oct/2019 17:24:19] "GET /login?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+2019-10-08 17:24:20,666 werkzeug          line:122  INFO     127.0.0.1 - - [08/Oct/2019 17:24:20] "GET /login?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+2019-10-08 17:25:12,509 werkzeug          line:122  INFO      * Detected change in '/Users/vishnuprakashsrinivasan/Desktop/camp/camp/controller/mongo_collections.py', reloading
+2019-10-08 17:25:12,943 werkzeug          line:122  INFO      * Restarting with stat
+2019-10-08 17:25:13,806 werkzeug          line:122  WARNING   * Debugger is active!
+2019-10-08 17:25:13,813 werkzeug          line:122  INFO      * Debugger PIN: 203-563-375
+2019-10-08 17:25:15,897 werkzeug          line:122  INFO      * Detected change in '/Users/vishnuprakashsrinivasan/Desktop/camp/camp/controller/mongo_collections.py', reloading
+2019-10-08 17:25:16,335 werkzeug          line:122  INFO      * Restarting with stat
+2019-10-08 17:25:17,128 werkzeug          line:122  WARNING   * Debugger is active!
+2019-10-08 17:25:17,134 werkzeug          line:122  INFO      * Debugger PIN: 203-563-375
+2019-10-08 17:25:24,359 werkzeug          line:122  INFO      * Detected change in '/Users/vishnuprakashsrinivasan/Desktop/camp/camp/controller/mongo_collections.py', reloading
+2019-10-08 17:25:24,688 werkzeug          line:122  INFO      * Restarting with stat
+2019-10-08 17:25:25,460 werkzeug          line:122  WARNING   * Debugger is active!
+2019-10-08 17:25:25,466 werkzeug          line:122  INFO      * Debugger PIN: 203-563-375
+2019-10-08 17:25:26,521 werkzeug          line:122  INFO      * Detected change in '/Users/vishnuprakashsrinivasan/Desktop/camp/camp/controller/mongo_collections.py', reloading
+2019-10-08 17:25:26,990 werkzeug          line:122  INFO      * Restarting with stat
+2019-10-08 17:25:27,906 werkzeug          line:122  WARNING   * Debugger is active!
+2019-10-08 17:25:27,913 werkzeug          line:122  INFO      * Debugger PIN: 203-563-375
+2019-10-08 17:26:02,633 werkzeug          line:122  INFO     127.0.0.1 - - [08/Oct/2019 17:26:02] "POST /login HTTP/1.1" 500 -
+2019-10-08 17:26:02,664 werkzeug          line:122  INFO     127.0.0.1 - - [08/Oct/2019 17:26:02] "GET /login?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+2019-10-08 17:26:02,669 werkzeug          line:122  INFO     127.0.0.1 - - [08/Oct/2019 17:26:02] "GET /login?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+2019-10-08 17:26:02,674 werkzeug          line:122  INFO     127.0.0.1 - - [08/Oct/2019 17:26:02] "GET /login?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+2019-10-08 17:26:02,732 werkzeug          line:122  INFO     127.0.0.1 - - [08/Oct/2019 17:26:02] "GET /login?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1" 200 -
+2019-10-08 17:26:02,736 werkzeug          line:122  INFO     127.0.0.1 - - [08/Oct/2019 17:26:02] "GET /login?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+2019-10-08 17:26:02,836 werkzeug          line:122  INFO     127.0.0.1 - - [08/Oct/2019 17:26:02] "GET /login?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+2019-10-08 17:27:41,560 werkzeug          line:122  INFO     127.0.0.1 - - [08/Oct/2019 17:27:41] "POST /login HTTP/1.1" 302 -
+2019-10-08 17:27:41,669 werkzeug          line:122  INFO     127.0.0.1 - - [08/Oct/2019 17:27:41] "GET /5d77513d78f2de903f113a2a/dashboard HTTP/1.1" 200 -
+2019-10-08 17:27:41,706 werkzeug          line:122  INFO     127.0.0.1 - - [08/Oct/2019 17:27:41] "GET /static/common_lib/css/flexdatalist.css HTTP/1.1" 200 -
+2019-10-08 17:27:41,706 werkzeug          line:122  INFO     127.0.0.1 - - [08/Oct/2019 17:27:41] "GET /static/images/horizontal.svg HTTP/1.1" 200 -
+2019-10-08 17:27:41,732 werkzeug          line:122  INFO     127.0.0.1 - - [08/Oct/2019 17:27:41] "GET /static/images/close.svg HTTP/1.1" 200 -
+2019-10-08 17:27:41,732 werkzeug          line:122  INFO     127.0.0.1 - - [08/Oct/2019 17:27:41] "GET /static/common_lib/js/flexdatalist.js HTTP/1.1" 200 -
+2019-10-08 17:27:41,733 werkzeug          line:122  INFO     127.0.0.1 - - [08/Oct/2019 17:27:41] "GET /static/images/rename.svg HTTP/1.1" 200 -
+2019-10-08 17:27:41,737 werkzeug          line:122  INFO     127.0.0.1 - - [08/Oct/2019 17:27:41] "GET /static/images/delete.svg HTTP/1.1" 200 -
+2019-10-08 17:28:25,056 werkzeug          line:122  INFO     127.0.0.1 - - [08/Oct/2019 17:28:25] "GET /5d77513d78f2de903f113a2a/dashboard HTTP/1.1" 302 -
+2019-10-08 17:28:55,317 werkzeug          line:122  INFO     127.0.0.1 - - [08/Oct/2019 17:28:55] "GET /login?next=%2F5d77513d78f2de903f113a2a%2Fdashboard HTTP/1.1" 200 -
+2019-10-08 17:29:15,497 werkzeug          line:122  INFO     127.0.0.1 - - [08/Oct/2019 17:29:15] "GET /5d77513d78f2de903f113a2a/dashboard HTTP/1.1" 302 -
+2019-10-08 17:29:45,764 werkzeug          line:122  INFO     127.0.0.1 - - [08/Oct/2019 17:29:45] "GET /login?next=%2F5d77513d78f2de903f113a2a%2Fdashboard HTTP/1.1" 200 -
+2019-10-09 10:34:38,123 werkzeug          line:122  INFO      * Running on http://0.0.0.0:2000/ (Press CTRL+C to quit)
+2019-10-09 10:34:38,127 werkzeug          line:122  INFO      * Restarting with stat
+2019-10-09 10:34:38,840 werkzeug          line:122  WARNING   * Debugger is active!
+2019-10-09 10:34:38,850 werkzeug          line:122  INFO      * Debugger PIN: 203-563-375
+2019-10-09 10:36:05,893 werkzeug          line:122  INFO     127.0.0.1 - - [09/Oct/2019 10:36:05] "GET /login HTTP/1.1" 200 -
+2019-10-09 10:36:05,980 werkzeug          line:122  INFO     127.0.0.1 - - [09/Oct/2019 10:36:05] "GET /static/images/logo.svg HTTP/1.1" 200 -
+2019-10-09 10:36:05,981 werkzeug          line:122  INFO     127.0.0.1 - - [09/Oct/2019 10:36:05] "GET /static/css/style.css HTTP/1.1" 200 -
+2019-10-09 10:36:05,983 werkzeug          line:122  INFO     127.0.0.1 - - [09/Oct/2019 10:36:05] "GET /static/js/register-page.js HTTP/1.1" 200 -
+2019-10-09 10:36:14,575 werkzeug          line:122  INFO     127.0.0.1 - - [09/Oct/2019 10:36:14] "POST /login HTTP/1.1" 302 -
+2019-10-09 10:36:14,671 werkzeug          line:122  INFO     127.0.0.1 - - [09/Oct/2019 10:36:14] "GET /5d77513d78f2de903f113a2a/dashboard HTTP/1.1" 200 -
+2019-10-09 10:36:14,696 werkzeug          line:122  INFO     127.0.0.1 - - [09/Oct/2019 10:36:14] "GET /static/common_lib/css/flexdatalist.css HTTP/1.1" 200 -
+2019-10-09 10:36:14,706 werkzeug          line:122  INFO     127.0.0.1 - - [09/Oct/2019 10:36:14] "GET /static/images/close.svg HTTP/1.1" 200 -
+2019-10-09 10:36:14,711 werkzeug          line:122  INFO     127.0.0.1 - - [09/Oct/2019 10:36:14] "GET /static/common_lib/js/flexdatalist.js HTTP/1.1" 200 -
+2019-10-09 10:36:14,712 werkzeug          line:122  INFO     127.0.0.1 - - [09/Oct/2019 10:36:14] "GET /static/images/horizontal.svg HTTP/1.1" 200 -
+2019-10-09 10:36:14,717 werkzeug          line:122  INFO     127.0.0.1 - - [09/Oct/2019 10:36:14] "GET /static/images/rename.svg HTTP/1.1" 200 -
+2019-10-09 10:36:14,722 werkzeug          line:122  INFO     127.0.0.1 - - [09/Oct/2019 10:36:14] "GET /static/images/delete.svg HTTP/1.1" 200 -
+2019-10-09 10:36:22,115 camp.controller.create_property line:42   WARNING  The team is already exist
+2019-10-09 10:36:22,116 werkzeug          line:122  INFO     127.0.0.1 - - [09/Oct/2019 10:36:22] "GET /api/team?team_name=data HTTP/1.1" 200 -
+2019-10-09 10:36:23,621 werkzeug          line:122  INFO     127.0.0.1 - - [09/Oct/2019 10:36:23] "GET /5d77513d78f2de903f113a2a/dashboard HTTP/1.1" 200 -
+2019-10-09 10:48:50,261 werkzeug          line:122  INFO      * Detected change in '/Users/vishnuprakashsrinivasan/Desktop/camp/camp/controller/create_property.py', reloading
+2019-10-09 10:48:50,829 werkzeug          line:122  INFO      * Restarting with stat
+2019-10-09 10:48:51,696 werkzeug          line:122  WARNING   * Debugger is active!
+2019-10-09 10:48:51,703 werkzeug          line:122  INFO      * Debugger PIN: 203-563-375
+2019-10-09 10:49:28,736 werkzeug          line:122  INFO      * Detected change in '/Users/vishnuprakashsrinivasan/Desktop/camp/camp/controller/create_property.py', reloading
+2019-10-09 10:49:28,941 werkzeug          line:122  INFO      * Restarting with stat
+2019-10-09 10:49:42,463 werkzeug          line:122  INFO      * Running on http://0.0.0.0:2000/ (Press CTRL+C to quit)
+2019-10-09 10:49:42,464 werkzeug          line:122  INFO      * Restarting with stat
+2019-10-09 10:49:43,192 werkzeug          line:122  WARNING   * Debugger is active!
+2019-10-09 10:49:43,199 werkzeug          line:122  INFO      * Debugger PIN: 203-563-375
+2019-10-09 10:49:47,287 werkzeug          line:122  INFO     127.0.0.1 - - [09/Oct/2019 10:49:47] "GET /5d77513d78f2de903f113a2a/dashboard HTTP/1.1" 200 -
+2019-10-09 10:49:53,592 camp.controller.create_property line:42   INFO     The team is already exist
+2019-10-09 10:49:53,593 werkzeug          line:122  INFO     127.0.0.1 - - [09/Oct/2019 10:49:53] "GET /api/team?team_name=test HTTP/1.1" 200 -
+2019-10-09 10:49:55,528 werkzeug          line:122  INFO     127.0.0.1 - - [09/Oct/2019 10:49:55] "GET /5d77513d78f2de903f113a2a/dashboard HTTP/1.1" 200 -
+2019-10-09 10:54:12,467 werkzeug          line:122  INFO      * Detected change in '/Users/vishnuprakashsrinivasan/Desktop/camp/camp/controller/create_property.py', reloading
+2019-10-09 10:54:13,063 werkzeug          line:122  INFO      * Restarting with stat
+2019-10-09 10:54:14,097 werkzeug          line:122  WARNING   * Debugger is active!
+2019-10-09 10:54:14,104 werkzeug          line:122  INFO      * Debugger PIN: 203-563-375
+2019-10-09 10:54:30,574 werkzeug          line:122  INFO      * Detected change in '/Users/vishnuprakashsrinivasan/Desktop/camp/camp/controller/create_property.py', reloading
+2019-10-09 10:54:30,708 werkzeug          line:122  INFO      * Restarting with stat
+2019-10-09 10:54:31,513 werkzeug          line:122  WARNING   * Debugger is active!
+2019-10-09 10:54:31,521 werkzeug          line:122  INFO      * Debugger PIN: 203-563-375
+2019-10-09 10:54:33,604 werkzeug          line:122  INFO      * Detected change in '/Users/vishnuprakashsrinivasan/Desktop/camp/camp/controller/create_property.py', reloading
+2019-10-09 10:54:34,037 werkzeug          line:122  INFO      * Restarting with stat
+2019-10-09 10:56:30,248 werkzeug          line:122  INFO      * Running on http://0.0.0.0:2000/ (Press CTRL+C to quit)
+2019-10-09 10:56:30,255 werkzeug          line:122  INFO      * Restarting with stat
+2019-10-09 10:56:31,032 werkzeug          line:122  WARNING   * Debugger is active!
+2019-10-09 10:56:31,038 werkzeug          line:122  INFO      * Debugger PIN: 203-563-375
+2019-10-09 10:56:32,471 werkzeug          line:122  INFO     127.0.0.1 - - [09/Oct/2019 10:56:32] "GET /todo/5d89f6508e7662ef6f4a7ddf HTTP/1.1" 200 -
+2019-10-09 10:56:37,832 werkzeug          line:122  INFO     127.0.0.1 - - [09/Oct/2019 10:56:37] "POST /api/add_todo HTTP/1.1" 200 -
+2019-10-09 10:56:43,108 camp.controller.create_property line:101  INFO     The sample todo already exist
+2019-10-09 10:56:43,109 werkzeug          line:122  INFO     127.0.0.1 - - [09/Oct/2019 10:56:43] "POST /api/add_todo HTTP/1.1" 200 -
+2019-10-09 10:56:44,904 werkzeug          line:122  INFO     127.0.0.1 - - [09/Oct/2019 10:56:44] "GET /todo/5d89f6508e7662ef6f4a7ddf HTTP/1.1" 200 -
+2019-10-09 10:57:03,973 werkzeug          line:122  INFO      * Detected change in '/Users/vishnuprakashsrinivasan/Desktop/camp/camp/controller/create_property.py', reloading
+2019-10-09 10:57:04,252 werkzeug          line:122  INFO      * Restarting with stat
+2019-10-09 10:57:05,033 werkzeug          line:122  WARNING   * Debugger is active!
+2019-10-09 10:57:05,040 werkzeug          line:122  INFO      * Debugger PIN: 203-563-375
+2019-10-09 10:57:08,142 werkzeug          line:122  INFO      * Detected change in '/Users/vishnuprakashsrinivasan/Desktop/camp/camp/controller/create_property.py', reloading
+2019-10-09 10:57:08,575 werkzeug          line:122  INFO      * Restarting with stat
+2019-10-09 10:57:09,383 werkzeug          line:122  WARNING   * Debugger is active!
+2019-10-09 10:57:09,389 werkzeug          line:122  INFO      * Debugger PIN: 203-563-375
+2019-10-09 10:57:10,433 werkzeug          line:122  INFO      * Detected change in '/Users/vishnuprakashsrinivasan/Desktop/camp/camp/controller/create_property.py', reloading
+2019-10-09 10:57:10,905 werkzeug          line:122  INFO      * Restarting with stat
+2019-10-09 10:57:11,685 werkzeug          line:122  WARNING   * Debugger is active!
+2019-10-09 10:57:11,691 werkzeug          line:122  INFO      * Debugger PIN: 203-563-375
+2019-10-09 10:57:13,777 werkzeug          line:122  INFO      * Detected change in '/Users/vishnuprakashsrinivasan/Desktop/camp/camp/controller/create_property.py', reloading
+2019-10-09 10:57:14,211 werkzeug          line:122  INFO      * Restarting with stat
+2019-10-09 10:57:15,003 werkzeug          line:122  WARNING   * Debugger is active!
+2019-10-09 10:57:15,010 werkzeug          line:122  INFO      * Debugger PIN: 203-563-375
+2019-10-09 10:57:19,153 werkzeug          line:122  INFO      * Detected change in '/Users/vishnuprakashsrinivasan/Desktop/camp/camp/controller/create_property.py', reloading
+2019-10-09 10:57:19,534 werkzeug          line:122  INFO      * Restarting with stat
+2019-10-09 10:57:20,255 werkzeug          line:122  WARNING   * Debugger is active!
+2019-10-09 10:57:20,262 werkzeug          line:122  INFO      * Debugger PIN: 203-563-375
+2019-10-09 10:57:36,091 camp.controller.create_property line:101  INFO     The todo sample was already exist
+2019-10-09 10:57:36,093 werkzeug          line:122  INFO     127.0.0.1 - - [09/Oct/2019 10:57:36] "POST /api/add_todo HTTP/1.1" 200 -
+2019-10-09 10:57:37,675 werkzeug          line:122  INFO     127.0.0.1 - - [09/Oct/2019 10:57:37] "GET /todo/5d89f6508e7662ef6f4a7ddf HTTP/1.1" 200 -
+2019-10-09 11:53:17,688 werkzeug          line:122  INFO      * Running on http://0.0.0.0:2000/ (Press CTRL+C to quit)
+2019-10-09 11:53:17,689 werkzeug          line:122  INFO      * Restarting with stat
+2019-10-09 11:53:18,477 werkzeug          line:122  WARNING   * Debugger is active!
+2019-10-09 11:53:18,488 werkzeug          line:122  INFO      * Debugger PIN: 203-563-375
+2019-10-09 11:53:22,363 werkzeug          line:122  INFO     127.0.0.1 - - [09/Oct/2019 11:53:22] "GET /todo/todo_list/5d9d6f8d89d5618daa880e43 HTTP/1.1" 200 -
+2019-10-09 11:53:35,906 werkzeug          line:122  INFO     127.0.0.1 - - [09/Oct/2019 11:53:35] "POST /api/5d9d6f8d89d5618daa880e43/todo_list HTTP/1.1" 200 -
+2019-10-09 11:55:11,718 werkzeug          line:122  INFO      * Detected change in '/Users/vishnuprakashsrinivasan/Desktop/camp/camp/controller/create_property.py', reloading
+2019-10-09 11:55:12,206 werkzeug          line:122  INFO      * Restarting with stat
+2019-10-09 11:55:12,995 werkzeug          line:122  WARNING   * Debugger is active!
+2019-10-09 11:55:13,001 werkzeug          line:122  INFO      * Debugger PIN: 203-563-375
+2019-10-09 11:55:16,108 werkzeug          line:122  INFO      * Detected change in '/Users/vishnuprakashsrinivasan/Desktop/camp/camp/controller/create_property.py', reloading
+2019-10-09 11:55:16,527 werkzeug          line:122  INFO      * Restarting with stat
+2019-10-09 11:55:17,359 werkzeug          line:122  WARNING   * Debugger is active!
+2019-10-09 11:55:17,365 werkzeug          line:122  INFO      * Debugger PIN: 203-563-375
+2019-10-09 11:55:19,444 werkzeug          line:122  INFO      * Detected change in '/Users/vishnuprakashsrinivasan/Desktop/camp/camp/controller/create_property.py', reloading
+2019-10-09 11:55:19,879 werkzeug          line:122  INFO      * Restarting with stat
+2019-10-09 11:55:20,679 werkzeug          line:122  WARNING   * Debugger is active!
+2019-10-09 11:55:20,686 werkzeug          line:122  INFO      * Debugger PIN: 203-563-375
+2019-10-09 11:55:26,481 werkzeug          line:122  INFO     127.0.0.1 - - [09/Oct/2019 11:55:26] "GET /todo/todo_list/5d9d6f8d89d5618daa880e43 HTTP/1.1" 200 -
+2019-10-09 11:55:35,478 werkzeug          line:122  INFO     127.0.0.1 - - [09/Oct/2019 11:55:35] "GET /todo/todo_list/5d9d6f8d89d5618daa880e43 HTTP/1.1" 200 -
+2019-10-09 11:55:46,479 werkzeug          line:122  INFO     127.0.0.1 - - [09/Oct/2019 11:55:46] "POST /api/5d9d6f8d89d5618daa880e43/todo_list HTTP/1.1" 200 -
+2019-10-09 11:58:24,796 werkzeug          line:122  INFO      * Detected change in '/Users/vishnuprakashsrinivasan/Desktop/camp/camp/controller/create_property.py', reloading
+2019-10-09 11:58:24,881 werkzeug          line:122  INFO      * Restarting with stat
+2019-10-09 11:58:25,680 werkzeug          line:122  WARNING   * Debugger is active!
+2019-10-09 11:58:25,687 werkzeug          line:122  INFO      * Debugger PIN: 203-563-375
+2019-10-09 11:58:27,776 werkzeug          line:122  INFO      * Detected change in '/Users/vishnuprakashsrinivasan/Desktop/camp/camp/controller/create_property.py', reloading
+2019-10-09 11:58:28,198 werkzeug          line:122  INFO      * Restarting with stat
+2019-10-09 11:58:28,918 werkzeug          line:122  WARNING   * Debugger is active!
+2019-10-09 11:58:28,926 werkzeug          line:122  INFO      * Debugger PIN: 203-563-375
+2019-10-09 11:58:33,047 werkzeug          line:122  INFO      * Detected change in '/Users/vishnuprakashsrinivasan/Desktop/camp/camp/controller/create_property.py', reloading
+2019-10-09 11:58:33,471 werkzeug          line:122  INFO      * Restarting with stat
+2019-10-09 11:58:34,366 werkzeug          line:122  WARNING   * Debugger is active!
+2019-10-09 11:58:34,372 werkzeug          line:122  INFO      * Debugger PIN: 203-563-375
+2019-10-09 11:58:38,507 werkzeug          line:122  INFO      * Detected change in '/Users/vishnuprakashsrinivasan/Desktop/camp/camp/controller/create_property.py', reloading
+2019-10-09 11:58:38,906 werkzeug          line:122  INFO      * Restarting with stat
+2019-10-09 11:58:39,726 werkzeug          line:122  WARNING   * Debugger is active!
+2019-10-09 11:58:39,733 werkzeug          line:122  INFO      * Debugger PIN: 203-563-375
+2019-10-09 11:58:42,831 werkzeug          line:122  INFO      * Detected change in '/Users/vishnuprakashsrinivasan/Desktop/camp/camp/controller/create_property.py', reloading
+2019-10-09 11:58:43,247 werkzeug          line:122  INFO      * Restarting with stat
+2019-10-09 11:58:44,081 werkzeug          line:122  WARNING   * Debugger is active!
+2019-10-09 11:58:44,088 werkzeug          line:122  INFO      * Debugger PIN: 203-563-375
+2019-10-09 11:58:45,145 werkzeug          line:122  INFO      * Detected change in '/Users/vishnuprakashsrinivasan/Desktop/camp/camp/controller/create_property.py', reloading
+2019-10-09 11:58:45,601 werkzeug          line:122  INFO      * Restarting with stat
+2019-10-09 11:58:46,364 werkzeug          line:122  WARNING   * Debugger is active!
+2019-10-09 11:58:46,374 werkzeug          line:122  INFO      * Debugger PIN: 203-563-375
+2019-10-09 11:58:47,430 werkzeug          line:122  INFO      * Detected change in '/Users/vishnuprakashsrinivasan/Desktop/camp/camp/controller/create_property.py', reloading
+2019-10-09 11:58:47,898 werkzeug          line:122  INFO      * Restarting with stat
+2019-10-09 11:58:48,697 werkzeug          line:122  WARNING   * Debugger is active!
+2019-10-09 11:58:48,704 werkzeug          line:122  INFO      * Debugger PIN: 203-563-375
+2019-10-09 11:58:56,936 werkzeug          line:122  INFO      * Detected change in '/Users/vishnuprakashsrinivasan/Desktop/camp/camp/controller/create_property.py', reloading
+2019-10-09 11:58:57,260 werkzeug          line:122  INFO      * Restarting with stat
+2019-10-09 11:58:58,003 werkzeug          line:122  WARNING   * Debugger is active!
+2019-10-09 11:58:58,010 werkzeug          line:122  INFO      * Debugger PIN: 203-563-375
+2019-10-09 11:59:06,258 werkzeug          line:122  INFO      * Detected change in '/Users/vishnuprakashsrinivasan/Desktop/camp/camp/controller/create_property.py', reloading
+2019-10-09 11:59:06,562 werkzeug          line:122  INFO      * Restarting with stat
+2019-10-09 11:59:07,337 werkzeug          line:122  WARNING   * Debugger is active!
+2019-10-09 11:59:07,343 werkzeug          line:122  INFO      * Debugger PIN: 203-563-375
+2019-10-09 11:59:08,392 werkzeug          line:122  INFO      * Detected change in '/Users/vishnuprakashsrinivasan/Desktop/camp/camp/controller/create_property.py', reloading
+2019-10-09 11:59:08,855 werkzeug          line:122  INFO      * Restarting with stat
+2019-10-09 11:59:09,664 werkzeug          line:122  WARNING   * Debugger is active!
+2019-10-09 11:59:09,671 werkzeug          line:122  INFO      * Debugger PIN: 203-563-375
+2019-10-09 11:59:10,715 werkzeug          line:122  INFO      * Detected change in '/Users/vishnuprakashsrinivasan/Desktop/camp/camp/controller/create_property.py', reloading
+2019-10-09 11:59:11,174 werkzeug          line:122  INFO      * Restarting with stat
+2019-10-09 11:59:11,904 werkzeug          line:122  WARNING   * Debugger is active!
+2019-10-09 11:59:11,910 werkzeug          line:122  INFO      * Debugger PIN: 203-563-375
+2019-10-09 11:59:17,087 werkzeug          line:122  INFO      * Detected change in '/Users/vishnuprakashsrinivasan/Desktop/camp/camp/controller/create_property.py', reloading
+2019-10-09 11:59:17,464 werkzeug          line:122  INFO      * Restarting with stat
+2019-10-09 11:59:18,336 werkzeug          line:122  WARNING   * Debugger is active!
+2019-10-09 11:59:18,345 werkzeug          line:122  INFO      * Debugger PIN: 203-563-375
+2019-10-09 11:59:38,986 werkzeug          line:122  INFO      * Detected change in '/Users/vishnuprakashsrinivasan/Desktop/camp/camp/controller/create_property.py', reloading
+2019-10-09 11:59:39,438 werkzeug          line:122  INFO      * Restarting with stat
+2019-10-09 11:59:40,189 werkzeug          line:122  WARNING   * Debugger is active!
+2019-10-09 11:59:40,198 werkzeug          line:122  INFO      * Debugger PIN: 203-563-375
+2019-10-09 11:59:43,291 werkzeug          line:122  INFO      * Detected change in '/Users/vishnuprakashsrinivasan/Desktop/camp/camp/controller/create_property.py', reloading
+2019-10-09 11:59:43,718 werkzeug          line:122  INFO      * Restarting with stat
+2019-10-09 11:59:44,534 werkzeug          line:122  WARNING   * Debugger is active!
+2019-10-09 11:59:44,541 werkzeug          line:122  INFO      * Debugger PIN: 203-563-375
+2019-10-09 11:59:47,658 werkzeug          line:122  INFO      * Detected change in '/Users/vishnuprakashsrinivasan/Desktop/camp/camp/controller/create_property.py', reloading
+2019-10-09 11:59:48,046 werkzeug          line:122  INFO      * Restarting with stat
+2019-10-09 11:59:48,782 werkzeug          line:122  WARNING   * Debugger is active!
+2019-10-09 11:59:48,788 werkzeug          line:122  INFO      * Debugger PIN: 203-563-375
+2019-10-09 11:59:58,073 werkzeug          line:122  INFO      * Detected change in '/Users/vishnuprakashsrinivasan/Desktop/camp/camp/controller/create_property.py', reloading
+2019-10-09 11:59:58,345 werkzeug          line:122  INFO      * Restarting with stat
+2019-10-09 11:59:59,134 werkzeug          line:122  WARNING   * Debugger is active!
+2019-10-09 11:59:59,141 werkzeug          line:122  INFO      * Debugger PIN: 203-563-375
+2019-10-09 12:00:02,242 werkzeug          line:122  INFO      * Detected change in '/Users/vishnuprakashsrinivasan/Desktop/camp/camp/controller/create_property.py', reloading
+2019-10-09 12:00:02,653 werkzeug          line:122  INFO      * Restarting with stat
+2019-10-09 12:00:03,455 werkzeug          line:122  WARNING   * Debugger is active!
+2019-10-09 12:00:03,462 werkzeug          line:122  INFO      * Debugger PIN: 203-563-375
+2019-10-09 12:00:07,594 werkzeug          line:122  INFO      * Detected change in '/Users/vishnuprakashsrinivasan/Desktop/camp/camp/controller/create_property.py', reloading
+2019-10-09 12:00:07,993 werkzeug          line:122  INFO      * Restarting with stat
+2019-10-09 12:00:08,760 werkzeug          line:122  WARNING   * Debugger is active!
+2019-10-09 12:00:08,767 werkzeug          line:122  INFO      * Debugger PIN: 203-563-375
+2019-10-09 12:00:09,819 werkzeug          line:122  INFO      * Detected change in '/Users/vishnuprakashsrinivasan/Desktop/camp/camp/controller/create_property.py', reloading
+2019-10-09 12:00:10,274 werkzeug          line:122  INFO      * Restarting with stat
+2019-10-09 12:00:11,057 werkzeug          line:122  WARNING   * Debugger is active!
+2019-10-09 12:00:11,064 werkzeug          line:122  INFO      * Debugger PIN: 203-563-375
+2019-10-09 12:00:13,139 werkzeug          line:122  INFO      * Detected change in '/Users/vishnuprakashsrinivasan/Desktop/camp/camp/controller/create_property.py', reloading
+2019-10-09 12:00:13,581 werkzeug          line:122  INFO      * Restarting with stat
+2019-10-09 12:00:14,355 werkzeug          line:122  WARNING   * Debugger is active!
+2019-10-09 12:00:14,362 werkzeug          line:122  INFO      * Debugger PIN: 203-563-375
+2019-10-09 12:00:22,600 werkzeug          line:122  INFO      * Detected change in '/Users/vishnuprakashsrinivasan/Desktop/camp/camp/controller/create_property.py', reloading
+2019-10-09 12:00:22,909 werkzeug          line:122  INFO      * Restarting with stat
+2019-10-09 12:00:23,642 werkzeug          line:122  WARNING   * Debugger is active!
+2019-10-09 12:00:23,656 werkzeug          line:122  INFO      * Debugger PIN: 203-563-375
+2019-10-09 12:00:37,027 werkzeug          line:122  INFO      * Detected change in '/Users/vishnuprakashsrinivasan/Desktop/camp/camp/controller/create_property.py', reloading
+2019-10-09 12:00:37,241 werkzeug          line:122  INFO      * Restarting with stat
+2019-10-09 12:00:38,107 werkzeug          line:122  WARNING   * Debugger is active!
+2019-10-09 12:00:38,113 werkzeug          line:122  INFO      * Debugger PIN: 203-563-375
+2019-10-09 12:00:40,201 werkzeug          line:122  INFO      * Detected change in '/Users/vishnuprakashsrinivasan/Desktop/camp/camp/controller/create_property.py', reloading
+2019-10-09 12:00:40,618 werkzeug          line:122  INFO      * Restarting with stat
+2019-10-09 12:00:41,395 werkzeug          line:122  WARNING   * Debugger is active!
+2019-10-09 12:00:41,405 werkzeug          line:122  INFO      * Debugger PIN: 203-563-375
+2019-10-09 12:00:43,482 werkzeug          line:122  INFO      * Detected change in '/Users/vishnuprakashsrinivasan/Desktop/camp/camp/controller/create_property.py', reloading
+2019-10-09 12:00:43,905 werkzeug          line:122  INFO      * Restarting with stat
+2019-10-09 12:00:44,714 werkzeug          line:122  WARNING   * Debugger is active!
+2019-10-09 12:00:44,723 werkzeug          line:122  INFO      * Debugger PIN: 203-563-375
+2019-10-09 12:00:50,926 werkzeug          line:122  INFO      * Detected change in '/Users/vishnuprakashsrinivasan/Desktop/camp/camp/controller/create_property.py', reloading
+2019-10-09 12:00:51,252 werkzeug          line:122  INFO      * Restarting with stat
+2019-10-09 12:00:52,090 werkzeug          line:122  WARNING   * Debugger is active!
+2019-10-09 12:00:52,096 werkzeug          line:122  INFO      * Debugger PIN: 203-563-375
+2019-10-09 12:00:53,147 werkzeug          line:122  INFO      * Detected change in '/Users/vishnuprakashsrinivasan/Desktop/camp/camp/controller/create_property.py', reloading
+2019-10-09 12:00:53,629 werkzeug          line:122  INFO      * Restarting with stat
+2019-10-09 12:00:54,429 werkzeug          line:122  WARNING   * Debugger is active!
+2019-10-09 12:00:54,436 werkzeug          line:122  INFO      * Debugger PIN: 203-563-375
+2019-10-09 12:01:01,653 werkzeug          line:122  INFO      * Detected change in '/Users/vishnuprakashsrinivasan/Desktop/camp/camp/controller/create_property.py', reloading
+2019-10-09 12:01:02,019 werkzeug          line:122  INFO      * Restarting with stat
+2019-10-09 12:01:02,789 werkzeug          line:122  WARNING   * Debugger is active!
+2019-10-09 12:01:02,796 werkzeug          line:122  INFO      * Debugger PIN: 203-563-375
+2019-10-09 12:01:06,936 werkzeug          line:122  INFO      * Detected change in '/Users/vishnuprakashsrinivasan/Desktop/camp/camp/controller/create_property.py', reloading
+2019-10-09 12:01:07,321 werkzeug          line:122  INFO      * Restarting with stat
+2019-10-09 12:01:08,134 werkzeug          line:122  WARNING   * Debugger is active!
+2019-10-09 12:01:08,141 werkzeug          line:122  INFO      * Debugger PIN: 203-563-375
+2019-10-09 12:01:10,216 werkzeug          line:122  INFO      * Detected change in '/Users/vishnuprakashsrinivasan/Desktop/camp/camp/controller/create_property.py', reloading
+2019-10-09 12:01:10,653 werkzeug          line:122  INFO      * Restarting with stat
+2019-10-09 12:01:11,530 werkzeug          line:122  WARNING   * Debugger is active!
+2019-10-09 12:01:11,537 werkzeug          line:122  INFO      * Debugger PIN: 203-563-375
+2019-10-09 12:01:17,709 werkzeug          line:122  INFO      * Detected change in '/Users/vishnuprakashsrinivasan/Desktop/camp/camp/controller/create_property.py', reloading
+2019-10-09 12:01:18,064 werkzeug          line:122  INFO      * Restarting with stat
+2019-10-09 12:01:18,787 werkzeug          line:122  WARNING   * Debugger is active!
+2019-10-09 12:01:18,793 werkzeug          line:122  INFO      * Debugger PIN: 203-563-375
+2019-10-09 12:01:52,731 werkzeug          line:122  INFO      * Detected change in '/Users/vishnuprakashsrinivasan/Desktop/camp/camp/controller/create_property.py', reloading
+2019-10-09 12:01:53,021 werkzeug          line:122  INFO      * Restarting with stat
+2019-10-09 12:01:53,900 werkzeug          line:122  WARNING   * Debugger is active!
+2019-10-09 12:01:53,915 werkzeug          line:122  INFO      * Debugger PIN: 203-563-375
+2019-10-09 12:01:58,047 werkzeug          line:122  INFO      * Detected change in '/Users/vishnuprakashsrinivasan/Desktop/camp/camp/controller/create_property.py', reloading
+2019-10-09 12:01:58,408 werkzeug          line:122  INFO      * Restarting with stat
+2019-10-09 12:28:12,180 werkzeug          line:122  INFO      * Running on http://0.0.0.0:2000/ (Press CTRL+C to quit)
+2019-10-09 12:28:12,183 werkzeug          line:122  INFO      * Restarting with stat
+2019-10-09 12:28:13,009 werkzeug          line:122  WARNING   * Debugger is active!
+2019-10-09 12:28:13,022 werkzeug          line:122  INFO      * Debugger PIN: 203-563-375
+2019-10-09 12:28:24,066 werkzeug          line:122  INFO     127.0.0.1 - - [09/Oct/2019 12:28:24] "GET /todo/todo_list/5d9d6f8d89d5618daa880e43 HTTP/1.1" 200 -
+2019-10-09 12:28:40,068 werkzeug          line:122  INFO     127.0.0.1 - - [09/Oct/2019 12:28:40] "POST /api/5d9d6f8d89d5618daa880e43/todo_list HTTP/1.1" 200 -
+2019-10-09 12:28:41,717 werkzeug          line:122  INFO     127.0.0.1 - - [09/Oct/2019 12:28:41] "GET /todo/todo_list/5d9d6f8d89d5618daa880e43 HTTP/1.1" 200 -
+2019-10-09 12:29:48,741 werkzeug          line:122  INFO      * Detected change in '/Users/vishnuprakashsrinivasan/Desktop/camp/camp/controller/delete_property.py', reloading
+2019-10-09 12:29:49,148 werkzeug          line:122  INFO      * Restarting with stat
+2019-10-09 12:29:50,029 werkzeug          line:122  WARNING   * Debugger is active!
+2019-10-09 12:29:50,038 werkzeug          line:122  INFO      * Debugger PIN: 203-563-375
+2019-10-09 12:29:53,145 werkzeug          line:122  INFO      * Detected change in '/Users/vishnuprakashsrinivasan/Desktop/camp/camp/controller/delete_property.py', reloading
+2019-10-09 12:29:53,549 werkzeug          line:122  INFO      * Restarting with stat
+2019-10-09 12:29:54,325 werkzeug          line:122  WARNING   * Debugger is active!
+2019-10-09 12:29:54,331 werkzeug          line:122  INFO      * Debugger PIN: 203-563-375
+2019-10-09 12:29:55,378 werkzeug          line:122  INFO      * Detected change in '/Users/vishnuprakashsrinivasan/Desktop/camp/camp/controller/delete_property.py', reloading
+2019-10-09 12:29:55,840 werkzeug          line:122  INFO      * Restarting with stat
+2019-10-09 12:29:56,578 werkzeug          line:122  WARNING   * Debugger is active!
+2019-10-09 12:29:56,585 werkzeug          line:122  INFO      * Debugger PIN: 203-563-375
+2019-10-09 12:30:58,214 werkzeug          line:122  INFO      * Detected change in '/Users/vishnuprakashsrinivasan/Desktop/camp/camp/controller/delete_property.py', reloading
+2019-10-09 12:30:58,558 werkzeug          line:122  INFO      * Restarting with stat
+2019-10-09 12:30:59,334 werkzeug          line:122  WARNING   * Debugger is active!
+2019-10-09 12:30:59,341 werkzeug          line:122  INFO      * Debugger PIN: 203-563-375
+2019-10-09 12:31:03,492 werkzeug          line:122  INFO      * Detected change in '/Users/vishnuprakashsrinivasan/Desktop/camp/camp/controller/delete_property.py', reloading
+2019-10-09 12:31:03,862 werkzeug          line:122  INFO      * Restarting with stat
+2019-10-09 12:31:04,697 werkzeug          line:122  WARNING   * Debugger is active!
+2019-10-09 12:31:04,704 werkzeug          line:122  INFO      * Debugger PIN: 203-563-375
+2019-10-09 12:31:07,826 werkzeug          line:122  INFO      * Detected change in '/Users/vishnuprakashsrinivasan/Desktop/camp/camp/controller/delete_property.py', reloading
+2019-10-09 12:31:08,236 werkzeug          line:122  INFO      * Restarting with stat
+2019-10-09 12:31:09,007 werkzeug          line:122  WARNING   * Debugger is active!
+2019-10-09 12:31:09,015 werkzeug          line:122  INFO      * Debugger PIN: 203-563-375
+2019-10-09 12:31:10,070 werkzeug          line:122  INFO      * Detected change in '/Users/vishnuprakashsrinivasan/Desktop/camp/camp/controller/delete_property.py', reloading
+2019-10-09 12:31:10,513 werkzeug          line:122  INFO      * Restarting with stat
+2019-10-09 12:31:11,437 werkzeug          line:122  WARNING   * Debugger is active!
+2019-10-09 12:31:11,448 werkzeug          line:122  INFO      * Debugger PIN: 203-563-375
+2019-10-09 12:31:13,539 werkzeug          line:122  INFO      * Detected change in '/Users/vishnuprakashsrinivasan/Desktop/camp/camp/controller/delete_property.py', reloading
+2019-10-09 12:31:13,940 werkzeug          line:122  INFO      * Restarting with stat
+2019-10-09 12:31:14,784 werkzeug          line:122  WARNING   * Debugger is active!
+2019-10-09 12:31:14,793 werkzeug          line:122  INFO      * Debugger PIN: 203-563-375
+2019-10-09 12:31:15,846 werkzeug          line:122  INFO      * Detected change in '/Users/vishnuprakashsrinivasan/Desktop/camp/camp/controller/delete_property.py', reloading
+2019-10-09 12:31:16,286 werkzeug          line:122  INFO      * Restarting with stat
+2019-10-09 12:31:17,072 werkzeug          line:122  WARNING   * Debugger is active!
+2019-10-09 12:31:17,079 werkzeug          line:122  INFO      * Debugger PIN: 203-563-375
+2019-10-09 12:31:19,157 werkzeug          line:122  INFO      * Detected change in '/Users/vishnuprakashsrinivasan/Desktop/camp/camp/controller/delete_property.py', reloading
+2019-10-09 12:31:19,601 werkzeug          line:122  INFO      * Restarting with stat
+2019-10-09 12:31:20,446 werkzeug          line:122  WARNING   * Debugger is active!
+2019-10-09 12:31:20,455 werkzeug          line:122  INFO      * Debugger PIN: 203-563-375
+2019-10-09 12:31:21,526 werkzeug          line:122  INFO      * Detected change in '/Users/vishnuprakashsrinivasan/Desktop/camp/camp/controller/delete_property.py', reloading
+2019-10-09 12:31:21,969 werkzeug          line:122  INFO      * Restarting with stat
+2019-10-09 12:31:22,722 werkzeug          line:122  WARNING   * Debugger is active!
+2019-10-09 12:31:22,728 werkzeug          line:122  INFO      * Debugger PIN: 203-563-375
+2019-10-09 12:31:24,803 werkzeug          line:122  INFO      * Detected change in '/Users/vishnuprakashsrinivasan/Desktop/camp/camp/controller/delete_property.py', reloading
+2019-10-09 12:31:25,246 werkzeug          line:122  INFO      * Restarting with stat
+2019-10-09 12:31:26,080 werkzeug          line:122  WARNING   * Debugger is active!
+2019-10-09 12:31:26,088 werkzeug          line:122  INFO      * Debugger PIN: 203-563-375
+2019-10-09 12:31:27,139 werkzeug          line:122  INFO      * Detected change in '/Users/vishnuprakashsrinivasan/Desktop/camp/camp/controller/delete_property.py', reloading
+2019-10-09 12:31:27,587 werkzeug          line:122  INFO      * Restarting with stat
+2019-10-09 12:31:28,431 werkzeug          line:122  WARNING   * Debugger is active!
+2019-10-09 12:31:28,440 werkzeug          line:122  INFO      * Debugger PIN: 203-563-375
+2019-10-09 12:31:38,742 werkzeug          line:122  INFO      * Detected change in '/Users/vishnuprakashsrinivasan/Desktop/camp/camp/controller/delete_property.py', reloading
+2019-10-09 12:31:38,981 werkzeug          line:122  INFO      * Restarting with stat
+2019-10-09 12:31:39,748 werkzeug          line:122  WARNING   * Debugger is active!
+2019-10-09 12:31:39,755 werkzeug          line:122  INFO      * Debugger PIN: 203-563-375
+2019-10-09 12:31:45,943 werkzeug          line:122  INFO      * Detected change in '/Users/vishnuprakashsrinivasan/Desktop/camp/camp/controller/delete_property.py', reloading
+2019-10-09 12:31:46,303 werkzeug          line:122  INFO      * Restarting with stat
+2019-10-09 12:31:47,045 werkzeug          line:122  WARNING   * Debugger is active!
+2019-10-09 12:31:47,051 werkzeug          line:122  INFO      * Debugger PIN: 203-563-375
+2019-10-09 12:31:48,102 werkzeug          line:122  INFO      * Detected change in '/Users/vishnuprakashsrinivasan/Desktop/camp/camp/controller/delete_property.py', reloading
+2019-10-09 12:31:48,568 werkzeug          line:122  INFO      * Restarting with stat
+2019-10-09 12:31:49,441 werkzeug          line:122  WARNING   * Debugger is active!
+2019-10-09 12:31:49,450 werkzeug          line:122  INFO      * Debugger PIN: 203-563-375
+2019-10-09 12:31:50,497 werkzeug          line:122  INFO      * Detected change in '/Users/vishnuprakashsrinivasan/Desktop/camp/camp/controller/delete_property.py', reloading
+2019-10-09 12:31:50,961 werkzeug          line:122  INFO      * Restarting with stat
+2019-10-09 12:31:51,751 werkzeug          line:122  WARNING   * Debugger is active!
+2019-10-09 12:31:51,759 werkzeug          line:122  INFO      * Debugger PIN: 203-563-375
+2019-10-09 12:31:56,927 werkzeug          line:122  INFO      * Detected change in '/Users/vishnuprakashsrinivasan/Desktop/camp/camp/controller/delete_property.py', reloading
+2019-10-09 12:31:57,282 werkzeug          line:122  INFO      * Restarting with stat
+2019-10-09 12:31:58,041 werkzeug          line:122  WARNING   * Debugger is active!
+2019-10-09 12:31:58,047 werkzeug          line:122  INFO      * Debugger PIN: 203-563-375
+2019-10-09 12:32:07,297 werkzeug          line:122  INFO      * Detected change in '/Users/vishnuprakashsrinivasan/Desktop/camp/camp/controller/delete_property.py', reloading
+2019-10-09 12:32:07,626 werkzeug          line:122  INFO      * Restarting with stat
+2019-10-09 12:32:08,551 werkzeug          line:122  WARNING   * Debugger is active!
+2019-10-09 12:32:08,561 werkzeug          line:122  INFO      * Debugger PIN: 203-563-375
+2019-10-09 12:32:09,615 werkzeug          line:122  INFO      * Detected change in '/Users/vishnuprakashsrinivasan/Desktop/camp/camp/controller/delete_property.py', reloading
+2019-10-09 12:32:10,058 werkzeug          line:122  INFO      * Restarting with stat
+2019-10-09 12:32:10,996 werkzeug          line:122  WARNING   * Debugger is active!
+2019-10-09 12:32:11,002 werkzeug          line:122  INFO      * Debugger PIN: 203-563-375
+2019-10-09 12:32:37,751 werkzeug          line:122  INFO      * Detected change in '/Users/vishnuprakashsrinivasan/Desktop/camp/camp/controller/delete_property.py', reloading
+2019-10-09 12:32:38,145 werkzeug          line:122  INFO      * Restarting with stat
+2019-10-09 12:32:39,033 werkzeug          line:122  WARNING   * Debugger is active!
+2019-10-09 12:32:39,042 werkzeug          line:122  INFO      * Debugger PIN: 203-563-375
+2019-10-09 12:32:41,120 werkzeug          line:122  INFO      * Detected change in '/Users/vishnuprakashsrinivasan/Desktop/camp/camp/controller/delete_property.py', reloading
+2019-10-09 12:32:41,549 werkzeug          line:122  INFO      * Restarting with stat
+2019-10-09 12:32:42,352 werkzeug          line:122  WARNING   * Debugger is active!
+2019-10-09 12:32:42,358 werkzeug          line:122  INFO      * Debugger PIN: 203-563-375
+2019-10-09 12:32:47,518 werkzeug          line:122  INFO      * Detected change in '/Users/vishnuprakashsrinivasan/Desktop/camp/camp/controller/delete_property.py', reloading
+2019-10-09 12:32:47,919 werkzeug          line:122  INFO      * Restarting with stat
+2019-10-09 12:32:48,679 werkzeug          line:122  WARNING   * Debugger is active!
+2019-10-09 12:32:48,687 werkzeug          line:122  INFO      * Debugger PIN: 203-563-375
+2019-10-09 12:32:50,769 werkzeug          line:122  INFO      * Detected change in '/Users/vishnuprakashsrinivasan/Desktop/camp/camp/controller/delete_property.py', reloading
+2019-10-09 12:32:51,202 werkzeug          line:122  INFO      * Restarting with stat
+2019-10-09 12:32:51,942 werkzeug          line:122  WARNING   * Debugger is active!
+2019-10-09 12:32:51,948 werkzeug          line:122  INFO      * Debugger PIN: 203-563-375
+2019-10-09 12:33:01,235 werkzeug          line:122  INFO      * Detected change in '/Users/vishnuprakashsrinivasan/Desktop/camp/camp/controller/delete_property.py', reloading
+2019-10-09 12:33:01,520 werkzeug          line:122  INFO      * Restarting with stat
+2019-10-09 12:33:02,249 werkzeug          line:122  WARNING   * Debugger is active!
+2019-10-09 12:33:02,256 werkzeug          line:122  INFO      * Debugger PIN: 203-563-375
+2019-10-09 12:33:06,386 werkzeug          line:122  INFO      * Detected change in '/Users/vishnuprakashsrinivasan/Desktop/camp/camp/controller/delete_property.py', reloading
+2019-10-09 12:33:06,770 werkzeug          line:122  INFO      * Restarting with stat
+2019-10-09 12:33:07,498 werkzeug          line:122  WARNING   * Debugger is active!
+2019-10-09 12:33:07,504 werkzeug          line:122  INFO      * Debugger PIN: 203-563-375
+2019-10-09 12:33:18,822 werkzeug          line:122  INFO      * Detected change in '/Users/vishnuprakashsrinivasan/Desktop/camp/camp/controller/delete_property.py', reloading
+2019-10-09 12:33:19,070 werkzeug          line:122  INFO      * Restarting with stat
+2019-10-09 12:33:19,909 werkzeug          line:122  WARNING   * Debugger is active!
+2019-10-09 12:33:19,915 werkzeug          line:122  INFO      * Debugger PIN: 203-563-375
+2019-10-09 12:33:23,019 werkzeug          line:122  INFO      * Detected change in '/Users/vishnuprakashsrinivasan/Desktop/camp/camp/controller/delete_property.py', reloading
+2019-10-09 12:33:23,430 werkzeug          line:122  INFO      * Restarting with stat
+2019-10-09 12:33:24,277 werkzeug          line:122  WARNING   * Debugger is active!
+2019-10-09 12:33:24,287 werkzeug          line:122  INFO      * Debugger PIN: 203-563-375
+2019-10-09 12:33:27,394 werkzeug          line:122  INFO      * Detected change in '/Users/vishnuprakashsrinivasan/Desktop/camp/camp/controller/delete_property.py', reloading
+2019-10-09 12:33:27,789 werkzeug          line:122  INFO      * Restarting with stat
+2019-10-09 12:33:28,543 werkzeug          line:122  WARNING   * Debugger is active!
+2019-10-09 12:33:28,550 werkzeug          line:122  INFO      * Debugger PIN: 203-563-375
+2019-10-09 12:33:31,646 werkzeug          line:122  INFO      * Detected change in '/Users/vishnuprakashsrinivasan/Desktop/camp/camp/controller/delete_property.py', reloading
+2019-10-09 12:33:32,069 werkzeug          line:122  INFO      * Restarting with stat
+2019-10-09 12:33:32,909 werkzeug          line:122  WARNING   * Debugger is active!
+2019-10-09 12:33:32,919 werkzeug          line:122  INFO      * Debugger PIN: 203-563-375
+2019-10-09 12:33:37,061 werkzeug          line:122  INFO      * Detected change in '/Users/vishnuprakashsrinivasan/Desktop/camp/camp/controller/delete_property.py', reloading
+2019-10-09 12:33:37,431 werkzeug          line:122  INFO      * Restarting with stat
+2019-10-09 12:33:38,155 werkzeug          line:122  WARNING   * Debugger is active!
+2019-10-09 12:33:38,161 werkzeug          line:122  INFO      * Debugger PIN: 203-563-375
+2019-10-09 12:33:42,292 werkzeug          line:122  INFO      * Detected change in '/Users/vishnuprakashsrinivasan/Desktop/camp/camp/controller/delete_property.py', reloading
+2019-10-09 12:33:42,688 werkzeug          line:122  INFO      * Restarting with stat
+2019-10-09 12:33:43,454 werkzeug          line:122  WARNING   * Debugger is active!
+2019-10-09 12:33:43,460 werkzeug          line:122  INFO      * Debugger PIN: 203-563-375
+2019-10-09 12:33:48,623 werkzeug          line:122  INFO      * Detected change in '/Users/vishnuprakashsrinivasan/Desktop/camp/camp/controller/delete_property.py', reloading
+2019-10-09 12:33:48,999 werkzeug          line:122  INFO      * Restarting with stat
+2019-10-09 12:33:49,820 werkzeug          line:122  WARNING   * Debugger is active!
+2019-10-09 12:33:49,827 werkzeug          line:122  INFO      * Debugger PIN: 203-563-375
+2019-10-09 12:34:04,276 werkzeug          line:122  INFO      * Detected change in '/Users/vishnuprakashsrinivasan/Desktop/camp/camp/controller/delete_property.py', reloading
+2019-10-09 12:34:04,403 werkzeug          line:122  INFO      * Restarting with stat
+2019-10-09 12:34:05,179 werkzeug          line:122  WARNING   * Debugger is active!
+2019-10-09 12:34:05,188 werkzeug          line:122  INFO      * Debugger PIN: 203-563-375
+2019-10-09 12:34:06,235 werkzeug          line:122  INFO      * Detected change in '/Users/vishnuprakashsrinivasan/Desktop/camp/camp/controller/delete_property.py', reloading
+2019-10-09 12:34:06,714 werkzeug          line:122  INFO      * Restarting with stat
+2019-10-09 12:34:07,524 werkzeug          line:122  WARNING   * Debugger is active!
+2019-10-09 12:34:07,532 werkzeug          line:122  INFO      * Debugger PIN: 203-563-375
+2019-10-09 12:34:17,841 werkzeug          line:122  INFO      * Detected change in '/Users/vishnuprakashsrinivasan/Desktop/camp/camp/controller/delete_property.py', reloading
+2019-10-09 12:34:18,071 werkzeug          line:122  INFO      * Restarting with stat
+2019-10-09 12:34:19,020 werkzeug          line:122  WARNING   * Debugger is active!
+2019-10-09 12:34:19,028 werkzeug          line:122  INFO      * Debugger PIN: 203-563-375
+2019-10-09 12:34:31,387 werkzeug          line:122  INFO      * Detected change in '/Users/vishnuprakashsrinivasan/Desktop/camp/camp/controller/delete_property.py', reloading
+2019-10-09 12:34:31,631 werkzeug          line:122  INFO      * Restarting with stat
+2019-10-09 12:34:32,484 werkzeug          line:122  WARNING   * Debugger is active!
+2019-10-09 12:34:32,495 werkzeug          line:122  INFO      * Debugger PIN: 203-563-375
+2019-10-09 12:34:34,585 werkzeug          line:122  INFO      * Detected change in '/Users/vishnuprakashsrinivasan/Desktop/camp/camp/controller/delete_property.py', reloading
+2019-10-09 12:34:34,998 werkzeug          line:122  INFO      * Restarting with stat
+2019-10-09 12:34:35,740 werkzeug          line:122  WARNING   * Debugger is active!
+2019-10-09 12:34:35,746 werkzeug          line:122  INFO      * Debugger PIN: 203-563-375
+2019-10-09 12:35:06,600 werkzeug          line:122  INFO      * Detected change in '/Users/vishnuprakashsrinivasan/Desktop/camp/camp/controller/delete_property.py', reloading
+2019-10-09 12:35:06,957 werkzeug          line:122  INFO      * Restarting with stat
+2019-10-09 12:35:07,736 werkzeug          line:122  WARNING   * Debugger is active!
+2019-10-09 12:35:07,743 werkzeug          line:122  INFO      * Debugger PIN: 203-563-375
+2019-10-09 12:35:11,881 werkzeug          line:122  INFO      * Detected change in '/Users/vishnuprakashsrinivasan/Desktop/camp/camp/controller/delete_property.py', reloading
+2019-10-09 12:35:12,264 werkzeug          line:122  INFO      * Restarting with stat
+2019-10-09 12:35:13,141 werkzeug          line:122  WARNING   * Debugger is active!
+2019-10-09 12:35:13,150 werkzeug          line:122  INFO      * Debugger PIN: 203-563-375
+2019-10-09 12:35:14,206 werkzeug          line:122  INFO      * Detected change in '/Users/vishnuprakashsrinivasan/Desktop/camp/camp/controller/delete_property.py', reloading
+2019-10-09 12:35:14,644 werkzeug          line:122  INFO      * Restarting with stat
+2019-10-09 12:35:15,408 werkzeug          line:122  WARNING   * Debugger is active!
+2019-10-09 12:35:15,416 werkzeug          line:122  INFO      * Debugger PIN: 203-563-375
+2019-10-09 12:35:23,655 werkzeug          line:122  INFO      * Detected change in '/Users/vishnuprakashsrinivasan/Desktop/camp/camp/controller/delete_property.py', reloading
+2019-10-09 12:35:24,006 werkzeug          line:122  INFO      * Restarting with stat
+2019-10-09 12:35:24,847 werkzeug          line:122  WARNING   * Debugger is active!
+2019-10-09 12:35:24,856 werkzeug          line:122  INFO      * Debugger PIN: 203-563-375
+2019-10-09 12:35:25,905 werkzeug          line:122  INFO      * Detected change in '/Users/vishnuprakashsrinivasan/Desktop/camp/camp/controller/delete_property.py', reloading
+2019-10-09 12:35:26,365 werkzeug          line:122  INFO      * Restarting with stat
+2019-10-09 12:35:27,162 werkzeug          line:122  WARNING   * Debugger is active!
+2019-10-09 12:35:27,169 werkzeug          line:122  INFO      * Debugger PIN: 203-563-375
+2019-10-09 12:35:29,248 werkzeug          line:122  INFO      * Detected change in '/Users/vishnuprakashsrinivasan/Desktop/camp/camp/controller/delete_property.py', reloading
+2019-10-09 12:35:29,685 werkzeug          line:122  INFO      * Restarting with stat
+2019-10-09 12:35:30,561 werkzeug          line:122  WARNING   * Debugger is active!
+2019-10-09 12:35:30,571 werkzeug          line:122  INFO      * Debugger PIN: 203-563-375
+2019-10-09 12:35:32,641 werkzeug          line:122  INFO      * Detected change in '/Users/vishnuprakashsrinivasan/Desktop/camp/camp/controller/delete_property.py', reloading
+2019-10-09 12:35:33,072 werkzeug          line:122  INFO      * Restarting with stat
+2019-10-09 12:35:33,881 werkzeug          line:122  WARNING   * Debugger is active!
+2019-10-09 12:35:33,899 werkzeug          line:122  INFO      * Debugger PIN: 203-563-375
+2019-10-09 12:35:52,450 werkzeug          line:122  INFO      * Detected change in '/Users/vishnuprakashsrinivasan/Desktop/camp/camp/controller/delete_property.py', reloading
+2019-10-09 12:35:52,976 werkzeug          line:122  INFO      * Restarting with stat
+2019-10-09 12:35:53,961 werkzeug          line:122  WARNING   * Debugger is active!
+2019-10-09 12:35:53,970 werkzeug          line:122  INFO      * Debugger PIN: 203-563-375
+2019-10-09 12:35:59,126 werkzeug          line:122  INFO      * Detected change in '/Users/vishnuprakashsrinivasan/Desktop/camp/camp/controller/delete_property.py', reloading
+2019-10-09 12:35:59,489 werkzeug          line:122  INFO      * Restarting with stat
+2019-10-09 12:36:00,313 werkzeug          line:122  WARNING   * Debugger is active!
+2019-10-09 12:36:00,321 werkzeug          line:122  INFO      * Debugger PIN: 203-563-375
+2019-10-09 12:36:01,371 werkzeug          line:122  INFO      * Detected change in '/Users/vishnuprakashsrinivasan/Desktop/camp/camp/controller/delete_property.py', reloading
+2019-10-09 12:36:01,835 werkzeug          line:122  INFO      * Restarting with stat
+2019-10-09 12:36:02,678 werkzeug          line:122  WARNING   * Debugger is active!
+2019-10-09 12:36:02,687 werkzeug          line:122  INFO      * Debugger PIN: 203-563-375
+2019-10-09 12:36:04,784 werkzeug          line:122  INFO      * Detected change in '/Users/vishnuprakashsrinivasan/Desktop/camp/camp/controller/delete_property.py', reloading
+2019-10-09 12:36:05,167 werkzeug          line:122  INFO      * Restarting with stat
+2019-10-09 12:36:06,023 werkzeug          line:122  WARNING   * Debugger is active!
+2019-10-09 12:36:06,035 werkzeug          line:122  INFO      * Debugger PIN: 203-563-375
+2019-10-09 12:36:09,147 werkzeug          line:122  INFO      * Detected change in '/Users/vishnuprakashsrinivasan/Desktop/camp/camp/controller/delete_property.py', reloading
+2019-10-09 12:36:09,508 werkzeug          line:122  INFO      * Restarting with stat
+2019-10-09 12:36:10,394 werkzeug          line:122  WARNING   * Debugger is active!
+2019-10-09 12:36:10,402 werkzeug          line:122  INFO      * Debugger PIN: 203-563-375
+2019-10-09 12:36:11,455 werkzeug          line:122  INFO      * Detected change in '/Users/vishnuprakashsrinivasan/Desktop/camp/camp/controller/delete_property.py', reloading
+2019-10-09 12:36:11,903 werkzeug          line:122  INFO      * Restarting with stat
+2019-10-09 12:36:12,679 werkzeug          line:122  WARNING   * Debugger is active!
+2019-10-09 12:36:12,685 werkzeug          line:122  INFO      * Debugger PIN: 203-563-375
+2019-10-09 12:36:13,735 werkzeug          line:122  INFO      * Detected change in '/Users/vishnuprakashsrinivasan/Desktop/camp/camp/controller/delete_property.py', reloading
+2019-10-09 12:36:14,197 werkzeug          line:122  INFO      * Restarting with stat
+2019-10-09 12:36:15,083 werkzeug          line:122  WARNING   * Debugger is active!
+2019-10-09 12:36:15,089 werkzeug          line:122  INFO      * Debugger PIN: 203-563-375
+2019-10-09 12:36:16,152 werkzeug          line:122  INFO      * Detected change in '/Users/vishnuprakashsrinivasan/Desktop/camp/camp/controller/delete_property.py', reloading
+2019-10-09 12:36:16,588 werkzeug          line:122  INFO      * Restarting with stat
+2019-10-09 12:36:17,358 werkzeug          line:122  WARNING   * Debugger is active!
+2019-10-09 12:36:17,364 werkzeug          line:122  INFO      * Debugger PIN: 203-563-375
+2019-10-09 12:36:19,446 werkzeug          line:122  INFO      * Detected change in '/Users/vishnuprakashsrinivasan/Desktop/camp/camp/controller/delete_property.py', reloading
+2019-10-09 12:36:19,884 werkzeug          line:122  INFO      * Restarting with stat
+2019-10-09 12:36:20,734 werkzeug          line:122  WARNING   * Debugger is active!
+2019-10-09 12:36:20,741 werkzeug          line:122  INFO      * Debugger PIN: 203-563-375
+2019-10-09 12:36:23,867 werkzeug          line:122  INFO      * Detected change in '/Users/vishnuprakashsrinivasan/Desktop/camp/camp/controller/delete_property.py', reloading
+2019-10-09 12:36:24,263 werkzeug          line:122  INFO      * Restarting with stat
+2019-10-09 12:36:25,026 werkzeug          line:122  WARNING   * Debugger is active!
+2019-10-09 12:36:25,032 werkzeug          line:122  INFO      * Debugger PIN: 203-563-375
+2019-10-09 12:36:26,082 werkzeug          line:122  INFO      * Detected change in '/Users/vishnuprakashsrinivasan/Desktop/camp/camp/controller/delete_property.py', reloading
+2019-10-09 12:36:26,511 werkzeug          line:122  INFO      * Restarting with stat
+2019-10-09 12:36:27,283 werkzeug          line:122  WARNING   * Debugger is active!
+2019-10-09 12:36:27,290 werkzeug          line:122  INFO      * Debugger PIN: 203-563-375
+2019-10-09 12:37:46,433 werkzeug          line:122  INFO      * Detected change in '/Users/vishnuprakashsrinivasan/Desktop/camp/camp/controller/delete_property.py', reloading
+2019-10-09 12:37:46,825 werkzeug          line:122  INFO      * Restarting with stat
+2019-10-09 12:37:47,618 werkzeug          line:122  WARNING   * Debugger is active!
+2019-10-09 12:37:47,624 werkzeug          line:122  INFO      * Debugger PIN: 203-563-375
+2019-10-09 12:37:49,710 werkzeug          line:122  INFO      * Detected change in '/Users/vishnuprakashsrinivasan/Desktop/camp/camp/controller/delete_property.py', reloading
+2019-10-09 12:37:50,163 werkzeug          line:122  INFO      * Restarting with stat
+2019-10-09 12:37:50,903 werkzeug          line:122  WARNING   * Debugger is active!
+2019-10-09 12:37:50,909 werkzeug          line:122  INFO      * Debugger PIN: 203-563-375
+2019-10-09 12:37:51,953 werkzeug          line:122  INFO      * Detected change in '/Users/vishnuprakashsrinivasan/Desktop/camp/camp/controller/delete_property.py', reloading
+2019-10-09 12:37:52,423 werkzeug          line:122  INFO      * Restarting with stat
+2019-10-09 12:37:53,298 werkzeug          line:122  WARNING   * Debugger is active!
+2019-10-09 12:37:53,304 werkzeug          line:122  INFO      * Debugger PIN: 203-563-375
+2019-10-09 12:37:54,358 werkzeug          line:122  INFO      * Detected change in '/Users/vishnuprakashsrinivasan/Desktop/camp/camp/controller/delete_property.py', reloading
+2019-10-09 12:37:54,813 werkzeug          line:122  INFO      * Restarting with stat
+2019-10-09 12:37:55,644 werkzeug          line:122  WARNING   * Debugger is active!
+2019-10-09 12:37:55,651 werkzeug          line:122  INFO      * Debugger PIN: 203-563-375
+2019-10-09 12:37:56,703 werkzeug          line:122  INFO      * Detected change in '/Users/vishnuprakashsrinivasan/Desktop/camp/camp/controller/delete_property.py', reloading
+2019-10-09 12:37:57,155 werkzeug          line:122  INFO      * Restarting with stat
+2019-10-09 12:37:57,965 werkzeug          line:122  WARNING   * Debugger is active!
+2019-10-09 12:37:57,971 werkzeug          line:122  INFO      * Debugger PIN: 203-563-375
+2019-10-09 12:37:59,023 werkzeug          line:122  INFO      * Detected change in '/Users/vishnuprakashsrinivasan/Desktop/camp/camp/controller/delete_property.py', reloading
+2019-10-09 12:37:59,473 werkzeug          line:122  INFO      * Restarting with stat
+2019-10-09 12:38:00,243 werkzeug          line:122  WARNING   * Debugger is active!
+2019-10-09 12:38:00,252 werkzeug          line:122  INFO      * Debugger PIN: 203-563-375
+2019-10-09 12:38:02,340 werkzeug          line:122  INFO      * Detected change in '/Users/vishnuprakashsrinivasan/Desktop/camp/camp/controller/delete_property.py', reloading
+2019-10-09 12:38:02,749 werkzeug          line:122  INFO      * Restarting with stat
+2019-10-09 12:38:03,507 werkzeug          line:122  WARNING   * Debugger is active!
+2019-10-09 12:38:03,513 werkzeug          line:122  INFO      * Debugger PIN: 203-563-375
+2019-10-09 12:38:05,588 werkzeug          line:122  INFO      * Detected change in '/Users/vishnuprakashsrinivasan/Desktop/camp/camp/controller/delete_property.py', reloading
+2019-10-09 12:38:06,054 werkzeug          line:122  INFO      * Restarting with stat
+2019-10-09 12:38:06,864 werkzeug          line:122  WARNING   * Debugger is active!
+2019-10-09 12:38:06,871 werkzeug          line:122  INFO      * Debugger PIN: 203-563-375
+2019-10-09 12:38:12,032 werkzeug          line:122  INFO      * Detected change in '/Users/vishnuprakashsrinivasan/Desktop/camp/camp/controller/delete_property.py', reloading
+2019-10-09 12:38:12,408 werkzeug          line:122  INFO      * Restarting with stat
+2019-10-09 12:38:13,365 werkzeug          line:122  WARNING   * Debugger is active!
+2019-10-09 12:38:13,373 werkzeug          line:122  INFO      * Debugger PIN: 203-563-375
+2019-10-09 12:39:19,193 werkzeug          line:122  INFO      * Detected change in '/Users/vishnuprakashsrinivasan/Desktop/camp/camp/controller/delete_property.py', reloading
+2019-10-09 12:39:19,287 werkzeug          line:122  INFO      * Restarting with stat
+2019-10-09 12:39:21,155 werkzeug          line:122  WARNING   * Debugger is active!
+2019-10-09 12:39:21,163 werkzeug          line:122  INFO      * Debugger PIN: 203-563-375
+2019-10-09 12:39:23,245 werkzeug          line:122  INFO      * Detected change in '/Users/vishnuprakashsrinivasan/Desktop/camp/camp/controller/delete_property.py', reloading
+2019-10-09 12:39:23,663 werkzeug          line:122  INFO      * Restarting with stat
+2019-10-09 12:39:24,428 werkzeug          line:122  WARNING   * Debugger is active!
+2019-10-09 12:39:24,436 werkzeug          line:122  INFO      * Debugger PIN: 203-563-375
+2019-10-09 12:39:25,486 werkzeug          line:122  INFO      * Detected change in '/Users/vishnuprakashsrinivasan/Desktop/camp/camp/controller/delete_property.py', reloading
+2019-10-09 12:39:25,939 werkzeug          line:122  INFO      * Restarting with stat
+2019-10-09 12:39:26,709 werkzeug          line:122  WARNING   * Debugger is active!
+2019-10-09 12:39:26,716 werkzeug          line:122  INFO      * Debugger PIN: 203-563-375
+2019-10-09 12:39:28,801 werkzeug          line:122  INFO      * Detected change in '/Users/vishnuprakashsrinivasan/Desktop/camp/camp/controller/delete_property.py', reloading
+2019-10-09 12:39:29,237 werkzeug          line:122  INFO      * Restarting with stat
+2019-10-09 12:39:30,048 werkzeug          line:122  WARNING   * Debugger is active!
+2019-10-09 12:39:30,056 werkzeug          line:122  INFO      * Debugger PIN: 203-563-375
+2019-10-09 12:39:31,109 werkzeug          line:122  INFO      * Detected change in '/Users/vishnuprakashsrinivasan/Desktop/camp/camp/controller/delete_property.py', reloading
+2019-10-09 12:39:31,549 werkzeug          line:122  INFO      * Restarting with stat
+2019-10-09 12:39:32,360 werkzeug          line:122  WARNING   * Debugger is active!
+2019-10-09 12:39:32,367 werkzeug          line:122  INFO      * Debugger PIN: 203-563-375
+2019-10-09 12:39:33,421 werkzeug          line:122  INFO      * Detected change in '/Users/vishnuprakashsrinivasan/Desktop/camp/camp/controller/delete_property.py', reloading
+2019-10-09 12:39:33,879 werkzeug          line:122  INFO      * Restarting with stat
+2019-10-09 12:39:34,798 werkzeug          line:122  WARNING   * Debugger is active!
+2019-10-09 12:39:34,805 werkzeug          line:122  INFO      * Debugger PIN: 203-563-375
+2019-10-09 12:40:07,729 werkzeug          line:122  INFO      * Detected change in '/Users/vishnuprakashsrinivasan/Desktop/camp/camp/controller/delete_property.py', reloading
+2019-10-09 12:40:07,988 werkzeug          line:122  INFO      * Restarting with stat
+2019-10-09 12:40:08,797 werkzeug          line:122  WARNING   * Debugger is active!
+2019-10-09 12:40:08,808 werkzeug          line:122  INFO      * Debugger PIN: 203-563-375
+2019-10-09 12:40:14,996 werkzeug          line:122  INFO      * Detected change in '/Users/vishnuprakashsrinivasan/Desktop/camp/camp/controller/delete_property.py', reloading
+2019-10-09 12:40:15,343 werkzeug          line:122  INFO      * Restarting with stat
+2019-10-09 12:40:16,072 werkzeug          line:122  WARNING   * Debugger is active!
+2019-10-09 12:40:16,079 werkzeug          line:122  INFO      * Debugger PIN: 203-563-375
+2019-10-09 12:40:23,297 werkzeug          line:122  INFO      * Detected change in '/Users/vishnuprakashsrinivasan/Desktop/camp/camp/controller/delete_property.py', reloading
+2019-10-09 12:40:23,627 werkzeug          line:122  INFO      * Restarting with stat
+2019-10-09 12:40:24,430 werkzeug          line:122  WARNING   * Debugger is active!
+2019-10-09 12:40:24,455 werkzeug          line:122  INFO      * Debugger PIN: 203-563-375
+2019-10-09 12:40:26,547 werkzeug          line:122  INFO      * Detected change in '/Users/vishnuprakashsrinivasan/Desktop/camp/camp/controller/delete_property.py', reloading
+2019-10-09 12:40:26,946 werkzeug          line:122  INFO      * Restarting with stat
+2019-10-09 12:40:27,712 werkzeug          line:122  WARNING   * Debugger is active!
+2019-10-09 12:40:27,719 werkzeug          line:122  INFO      * Debugger PIN: 203-563-375
+2019-10-09 12:40:34,928 werkzeug          line:122  INFO      * Detected change in '/Users/vishnuprakashsrinivasan/Desktop/camp/camp/controller/delete_property.py', reloading
+2019-10-09 12:40:35,274 werkzeug          line:122  INFO      * Restarting with stat
+2019-10-09 12:40:36,072 werkzeug          line:122  WARNING   * Debugger is active!
+2019-10-09 12:40:36,078 werkzeug          line:122  INFO      * Debugger PIN: 203-563-375
+2019-10-09 12:40:40,210 werkzeug          line:122  INFO      * Detected change in '/Users/vishnuprakashsrinivasan/Desktop/camp/camp/controller/delete_property.py', reloading
+2019-10-09 12:40:40,629 werkzeug          line:122  INFO      * Restarting with stat
+2019-10-09 12:40:41,427 werkzeug          line:122  WARNING   * Debugger is active!
+2019-10-09 12:40:41,434 werkzeug          line:122  INFO      * Debugger PIN: 203-563-375
+2019-10-09 12:40:44,544 werkzeug          line:122  INFO      * Detected change in '/Users/vishnuprakashsrinivasan/Desktop/camp/camp/controller/delete_property.py', reloading
+2019-10-09 12:40:44,955 werkzeug          line:122  INFO      * Restarting with stat
+2019-10-09 12:40:45,863 werkzeug          line:122  WARNING   * Debugger is active!
+2019-10-09 12:40:45,869 werkzeug          line:122  INFO      * Debugger PIN: 203-563-375
+2019-10-09 12:40:50,012 werkzeug          line:122  INFO      * Detected change in '/Users/vishnuprakashsrinivasan/Desktop/camp/camp/controller/delete_property.py', reloading
+2019-10-09 12:40:50,407 werkzeug          line:122  INFO      * Restarting with stat
+2019-10-09 12:40:51,183 werkzeug          line:122  WARNING   * Debugger is active!
+2019-10-09 12:40:51,190 werkzeug          line:122  INFO      * Debugger PIN: 203-563-375
+2019-10-09 12:40:53,273 werkzeug          line:122  INFO      * Detected change in '/Users/vishnuprakashsrinivasan/Desktop/camp/camp/controller/delete_property.py', reloading
+2019-10-09 12:40:53,709 werkzeug          line:122  INFO      * Restarting with stat
+2019-10-09 12:40:54,497 werkzeug          line:122  WARNING   * Debugger is active!
+2019-10-09 12:40:54,504 werkzeug          line:122  INFO      * Debugger PIN: 203-563-375
+2019-10-09 12:41:02,748 werkzeug          line:122  INFO      * Detected change in '/Users/vishnuprakashsrinivasan/Desktop/camp/camp/controller/delete_property.py', reloading
+2019-10-09 12:41:03,060 werkzeug          line:122  INFO      * Restarting with stat
+2019-10-09 12:41:03,950 werkzeug          line:122  WARNING   * Debugger is active!
+2019-10-09 12:41:03,957 werkzeug          line:122  INFO      * Debugger PIN: 203-563-375
+2019-10-09 12:41:05,019 werkzeug          line:122  INFO      * Detected change in '/Users/vishnuprakashsrinivasan/Desktop/camp/camp/controller/delete_property.py', reloading
+2019-10-09 12:41:05,458 werkzeug          line:122  INFO      * Restarting with stat
+2019-10-09 12:41:06,190 werkzeug          line:122  WARNING   * Debugger is active!
+2019-10-09 12:41:06,197 werkzeug          line:122  INFO      * Debugger PIN: 203-563-375
+2019-10-09 12:41:12,396 werkzeug          line:122  INFO      * Detected change in '/Users/vishnuprakashsrinivasan/Desktop/camp/camp/controller/delete_property.py', reloading
+2019-10-09 12:41:12,739 werkzeug          line:122  INFO      * Restarting with stat
+2019-10-09 12:41:13,466 werkzeug          line:122  WARNING   * Debugger is active!
+2019-10-09 12:41:13,472 werkzeug          line:122  INFO      * Debugger PIN: 203-563-375
+2019-10-09 12:41:36,089 werkzeug          line:122  INFO      * Detected change in '/Users/vishnuprakashsrinivasan/Desktop/camp/camp/controller/delete_property.py', reloading
+2019-10-09 12:41:36,628 werkzeug          line:122  INFO      * Restarting with stat
+2019-10-09 12:41:37,386 werkzeug          line:122  WARNING   * Debugger is active!
+2019-10-09 12:41:37,393 werkzeug          line:122  INFO      * Debugger PIN: 203-563-375
+2019-10-09 12:41:47,685 werkzeug          line:122  INFO      * Detected change in '/Users/vishnuprakashsrinivasan/Desktop/camp/camp/controller/delete_property.py', reloading
+2019-10-09 12:41:47,940 werkzeug          line:122  INFO      * Restarting with stat
+2019-10-09 12:41:48,764 werkzeug          line:122  WARNING   * Debugger is active!
+2019-10-09 12:41:48,773 werkzeug          line:122  INFO      * Debugger PIN: 203-563-375
+2019-10-09 12:41:50,860 werkzeug          line:122  INFO      * Detected change in '/Users/vishnuprakashsrinivasan/Desktop/camp/camp/controller/delete_property.py', reloading
+2019-10-09 12:41:51,272 werkzeug          line:122  INFO      * Restarting with stat
+2019-10-09 12:41:52,077 werkzeug          line:122  WARNING   * Debugger is active!
+2019-10-09 12:41:52,086 werkzeug          line:122  INFO      * Debugger PIN: 203-563-375
+2019-10-09 12:42:05,462 werkzeug          line:122  INFO      * Detected change in '/Users/vishnuprakashsrinivasan/Desktop/camp/camp/controller/delete_property.py', reloading
+2019-10-09 12:42:05,689 werkzeug          line:122  INFO      * Restarting with stat
+2019-10-09 12:42:07,537 werkzeug          line:122  WARNING   * Debugger is active!
+2019-10-09 12:42:07,546 werkzeug          line:122  INFO      * Debugger PIN: 203-563-375
+2019-10-09 12:42:13,418 werkzeug          line:122  INFO     127.0.0.1 - - [09/Oct/2019 12:42:13] "GET /5d77513d78f2de903f113a2a/dashboard HTTP/1.1" 200 -
+2019-10-09 12:42:15,194 werkzeug          line:122  INFO     127.0.0.1 - - [09/Oct/2019 12:42:15] "GET /todo/5d77514978f2de903f113a2b HTTP/1.1" 200 -
+2019-10-09 12:42:17,118 werkzeug          line:122  INFO     127.0.0.1 - - [09/Oct/2019 12:42:17] "GET /todo/todo_list/5d89ef66c9e674bd4943a6b6 HTTP/1.1" 200 -
+2019-10-09 12:42:23,813 werkzeug          line:122  INFO     127.0.0.1 - - [09/Oct/2019 12:42:23] "GET /todo/5d77514978f2de903f113a2b HTTP/1.1" 200 -
+2019-10-09 12:42:35,160 werkzeug          line:122  INFO     127.0.0.1 - - [09/Oct/2019 12:42:35] "GET /5d77513d78f2de903f113a2a/dashboard HTTP/1.1" 200 -
+2019-10-09 12:42:36,114 werkzeug          line:122  INFO     127.0.0.1 - - [09/Oct/2019 12:42:36] "GET /todo/5d89f6508e7662ef6f4a7ddf HTTP/1.1" 200 -
+2019-10-09 12:42:37,851 werkzeug          line:122  INFO     127.0.0.1 - - [09/Oct/2019 12:42:37] "GET /todo/todo_list/5d9d6f8d89d5618daa880e43 HTTP/1.1" 200 -
+2019-10-09 12:42:43,408 werkzeug          line:122  INFO     127.0.0.1 - - [09/Oct/2019 12:42:43] "GET /5d77513d78f2de903f113a2a/dashboard HTTP/1.1" 200 -
+2019-10-09 12:42:44,829 werkzeug          line:122  INFO     127.0.0.1 - - [09/Oct/2019 12:42:44] "GET /todo/5d77514978f2de903f113a2b HTTP/1.1" 200 -
+2019-10-09 12:42:46,147 werkzeug          line:122  INFO     127.0.0.1 - - [09/Oct/2019 12:42:46] "GET /todo/todo_list/5d89ef66c9e674bd4943a6b6 HTTP/1.1" 200 -
+2019-10-09 12:42:48,763 werkzeug          line:122  INFO     127.0.0.1 - - [09/Oct/2019 12:42:48] "GET /api/delete?todo_id=5d89ef66c9e674bd4943a6b6 HTTP/1.1" 200 -
+2019-10-09 12:42:48,808 werkzeug          line:122  INFO     127.0.0.1 - - [09/Oct/2019 12:42:48] "GET /todo/5d77514978f2de903f113a2b HTTP/1.1" 200 -
+2019-10-09 12:42:52,300 werkzeug          line:122  INFO     127.0.0.1 - - [09/Oct/2019 12:42:52] "GET /todo/5d77514978f2de903f113a2b HTTP/1.1" 200 -
+2019-10-09 12:44:48,284 werkzeug          line:122  INFO     127.0.0.1 - - [09/Oct/2019 12:44:48] "GET /todo/5d77514978f2de903f113a2b HTTP/1.1" 200 -
+2019-10-09 12:45:34,337 werkzeug          line:122  INFO      * Detected change in '/Users/vishnuprakashsrinivasan/Desktop/camp/camp/controller/delete_property.py', reloading
+2019-10-09 12:45:34,806 werkzeug          line:122  INFO      * Restarting with stat
+2019-10-09 12:45:36,741 werkzeug          line:122  WARNING   * Debugger is active!
+2019-10-09 12:45:36,750 werkzeug          line:122  INFO      * Debugger PIN: 203-563-375
+2019-10-09 12:45:37,802 werkzeug          line:122  INFO      * Detected change in '/Users/vishnuprakashsrinivasan/Desktop/camp/camp/controller/delete_property.py', reloading
+2019-10-09 12:45:38,237 werkzeug          line:122  INFO      * Restarting with stat
+2019-10-09 12:45:39,076 werkzeug          line:122  WARNING   * Debugger is active!
+2019-10-09 12:45:39,082 werkzeug          line:122  INFO      * Debugger PIN: 203-563-375
+2019-10-09 12:45:42,199 werkzeug          line:122  INFO      * Detected change in '/Users/vishnuprakashsrinivasan/Desktop/camp/camp/controller/delete_property.py', reloading
+2019-10-09 12:45:42,584 werkzeug          line:122  INFO      * Restarting with stat
+2019-10-09 12:45:43,394 werkzeug          line:122  WARNING   * Debugger is active!
+2019-10-09 12:45:43,400 werkzeug          line:122  INFO      * Debugger PIN: 203-563-375
+2019-10-09 12:45:52,688 werkzeug          line:122  INFO      * Detected change in '/Users/vishnuprakashsrinivasan/Desktop/camp/camp/controller/delete_property.py', reloading
+2019-10-09 12:45:52,943 werkzeug          line:122  INFO      * Restarting with stat
+2019-10-09 12:45:53,715 werkzeug          line:122  WARNING   * Debugger is active!
+2019-10-09 12:45:53,726 werkzeug          line:122  INFO      * Debugger PIN: 203-563-375
+2019-10-09 12:45:55,807 werkzeug          line:122  INFO      * Detected change in '/Users/vishnuprakashsrinivasan/Desktop/camp/camp/controller/delete_property.py', reloading
+2019-10-09 12:45:56,244 werkzeug          line:122  INFO      * Restarting with stat
+2019-10-09 12:45:57,031 werkzeug          line:122  WARNING   * Debugger is active!
+2019-10-09 12:45:57,038 werkzeug          line:122  INFO      * Debugger PIN: 203-563-375
+2019-10-09 12:45:58,088 werkzeug          line:122  INFO      * Detected change in '/Users/vishnuprakashsrinivasan/Desktop/camp/camp/controller/delete_property.py', reloading
+2019-10-09 12:45:58,553 werkzeug          line:122  INFO      * Restarting with stat
+2019-10-09 12:45:59,346 werkzeug          line:122  WARNING   * Debugger is active!
+2019-10-09 12:45:59,354 werkzeug          line:122  INFO      * Debugger PIN: 203-563-375
+2019-10-09 12:46:09,659 werkzeug          line:122  INFO      * Detected change in '/Users/vishnuprakashsrinivasan/Desktop/camp/camp/controller/delete_property.py', reloading
+2019-10-09 12:46:09,941 werkzeug          line:122  INFO      * Restarting with stat
+2019-10-09 12:46:10,882 werkzeug          line:122  WARNING   * Debugger is active!
+2019-10-09 12:46:10,892 werkzeug          line:122  INFO      * Debugger PIN: 203-563-375
+2019-10-09 12:46:11,954 werkzeug          line:122  INFO      * Detected change in '/Users/vishnuprakashsrinivasan/Desktop/camp/camp/controller/delete_property.py', reloading
+2019-10-09 12:46:12,398 werkzeug          line:122  INFO      * Restarting with stat
+2019-10-09 12:46:13,167 werkzeug          line:122  WARNING   * Debugger is active!
+2019-10-09 12:46:13,174 werkzeug          line:122  INFO      * Debugger PIN: 203-563-375
+2019-10-09 12:46:24,525 werkzeug          line:122  INFO      * Detected change in '/Users/vishnuprakashsrinivasan/Desktop/camp/camp/controller/delete_property.py', reloading
+2019-10-09 12:46:24,730 werkzeug          line:122  INFO      * Restarting with stat
+2019-10-09 12:46:25,778 werkzeug          line:122  WARNING   * Debugger is active!
+2019-10-09 12:46:25,786 werkzeug          line:122  INFO      * Debugger PIN: 203-563-375
+2019-10-09 12:46:29,931 werkzeug          line:122  INFO      * Detected change in '/Users/vishnuprakashsrinivasan/Desktop/camp/camp/controller/delete_property.py', reloading
+2019-10-09 12:46:30,304 werkzeug          line:122  INFO      * Restarting with stat
+2019-10-09 12:46:31,084 werkzeug          line:122  WARNING   * Debugger is active!
+2019-10-09 12:46:31,091 werkzeug          line:122  INFO      * Debugger PIN: 203-563-375
+2019-10-09 12:46:43,455 werkzeug          line:122  INFO      * Detected change in '/Users/vishnuprakashsrinivasan/Desktop/camp/camp/controller/delete_property.py', reloading
+2019-10-09 12:46:43,657 werkzeug          line:122  INFO      * Restarting with stat
+2019-10-09 12:46:44,463 werkzeug          line:122  WARNING   * Debugger is active!
+2019-10-09 12:46:44,470 werkzeug          line:122  INFO      * Debugger PIN: 203-563-375
+2019-10-09 12:46:45,521 werkzeug          line:122  INFO      * Detected change in '/Users/vishnuprakashsrinivasan/Desktop/camp/camp/controller/delete_property.py', reloading
+2019-10-09 12:46:45,986 werkzeug          line:122  INFO      * Restarting with stat
+2019-10-09 12:46:46,745 werkzeug          line:122  WARNING   * Debugger is active!
+2019-10-09 12:46:46,752 werkzeug          line:122  INFO      * Debugger PIN: 203-563-375
+2019-10-09 12:46:48,824 werkzeug          line:122  INFO      * Detected change in '/Users/vishnuprakashsrinivasan/Desktop/camp/camp/controller/delete_property.py', reloading
+2019-10-09 12:46:49,268 werkzeug          line:122  INFO      * Restarting with stat
+2019-10-09 12:46:50,069 werkzeug          line:122  WARNING   * Debugger is active!
+2019-10-09 12:46:50,077 werkzeug          line:122  INFO      * Debugger PIN: 203-563-375
+2019-10-09 12:46:51,128 werkzeug          line:122  INFO      * Detected change in '/Users/vishnuprakashsrinivasan/Desktop/camp/camp/controller/delete_property.py', reloading
+2019-10-09 12:46:51,584 werkzeug          line:122  INFO      * Restarting with stat
+2019-10-09 12:46:52,333 werkzeug          line:122  WARNING   * Debugger is active!
+2019-10-09 12:46:52,340 werkzeug          line:122  INFO      * Debugger PIN: 203-563-375
+2019-10-09 12:46:53,387 werkzeug          line:122  INFO      * Detected change in '/Users/vishnuprakashsrinivasan/Desktop/camp/camp/controller/delete_property.py', reloading
+2019-10-09 12:46:53,862 werkzeug          line:122  INFO      * Restarting with stat
+2019-10-09 12:46:54,669 werkzeug          line:122  WARNING   * Debugger is active!
+2019-10-09 12:46:54,676 werkzeug          line:122  INFO      * Debugger PIN: 203-563-375
+2019-10-09 12:47:01,914 werkzeug          line:122  INFO      * Detected change in '/Users/vishnuprakashsrinivasan/Desktop/camp/camp/controller/delete_property.py', reloading
+2019-10-09 12:47:02,198 werkzeug          line:122  INFO      * Restarting with stat
+2019-10-09 12:47:03,067 werkzeug          line:122  WARNING   * Debugger is active!
+2019-10-09 12:47:03,074 werkzeug          line:122  INFO      * Debugger PIN: 203-563-375
+2019-10-09 12:47:12,331 werkzeug          line:122  INFO      * Detected change in '/Users/vishnuprakashsrinivasan/Desktop/camp/camp/controller/delete_property.py', reloading
+2019-10-09 12:47:12,623 werkzeug          line:122  INFO      * Restarting with stat
+2019-10-09 12:47:13,535 werkzeug          line:122  WARNING   * Debugger is active!
+2019-10-09 12:47:13,541 werkzeug          line:122  INFO      * Debugger PIN: 203-563-375
+2019-10-09 12:47:24,874 werkzeug          line:122  INFO      * Detected change in '/Users/vishnuprakashsrinivasan/Desktop/camp/camp/controller/delete_property.py', reloading
+2019-10-09 12:47:25,075 werkzeug          line:122  INFO      * Restarting with stat
+2019-10-09 12:47:26,053 werkzeug          line:122  WARNING   * Debugger is active!
+2019-10-09 12:47:26,061 werkzeug          line:122  INFO      * Debugger PIN: 203-563-375
+2019-10-09 12:47:30,206 werkzeug          line:122  INFO      * Detected change in '/Users/vishnuprakashsrinivasan/Desktop/camp/camp/controller/delete_property.py', reloading
+2019-10-09 12:47:30,582 werkzeug          line:122  INFO      * Restarting with stat
+2019-10-09 12:47:31,456 werkzeug          line:122  WARNING   * Debugger is active!
+2019-10-09 12:47:31,463 werkzeug          line:122  INFO      * Debugger PIN: 203-563-375
+2019-10-09 12:47:36,660 werkzeug          line:122  INFO      * Detected change in '/Users/vishnuprakashsrinivasan/Desktop/camp/camp/controller/delete_property.py', reloading
+2019-10-09 12:47:37,006 werkzeug          line:122  INFO      * Restarting with stat
+2019-10-09 12:47:37,790 werkzeug          line:122  WARNING   * Debugger is active!
+2019-10-09 12:47:37,798 werkzeug          line:122  INFO      * Debugger PIN: 203-563-375
+2019-10-09 12:47:46,038 werkzeug          line:122  INFO      * Detected change in '/Users/vishnuprakashsrinivasan/Desktop/camp/camp/controller/delete_property.py', reloading
+2019-10-09 12:47:46,351 werkzeug          line:122  INFO      * Restarting with stat
+2019-10-09 12:47:47,127 werkzeug          line:122  WARNING   * Debugger is active!
+2019-10-09 12:47:47,134 werkzeug          line:122  INFO      * Debugger PIN: 203-563-375
+2019-10-09 12:47:51,270 werkzeug          line:122  INFO      * Detected change in '/Users/vishnuprakashsrinivasan/Desktop/camp/camp/controller/delete_property.py', reloading
+2019-10-09 12:47:51,672 werkzeug          line:122  INFO      * Restarting with stat
+2019-10-09 12:47:52,554 werkzeug          line:122  WARNING   * Debugger is active!
+2019-10-09 12:47:52,565 werkzeug          line:122  INFO      * Debugger PIN: 203-563-375
+2019-10-09 12:47:58,776 werkzeug          line:122  INFO      * Detected change in '/Users/vishnuprakashsrinivasan/Desktop/camp/camp/controller/delete_property.py', reloading
+2019-10-09 12:47:59,114 werkzeug          line:122  INFO      * Restarting with stat
+2019-10-09 12:47:59,893 werkzeug          line:122  WARNING   * Debugger is active!
+2019-10-09 12:47:59,899 werkzeug          line:122  INFO      * Debugger PIN: 203-563-375
+2019-10-09 12:48:01,981 werkzeug          line:122  INFO      * Detected change in '/Users/vishnuprakashsrinivasan/Desktop/camp/camp/controller/delete_property.py', reloading
+2019-10-09 12:48:02,409 werkzeug          line:122  INFO      * Restarting with stat
+2019-10-09 12:48:03,289 werkzeug          line:122  WARNING   * Debugger is active!
+2019-10-09 12:48:03,297 werkzeug          line:122  INFO      * Debugger PIN: 203-563-375
+2019-10-09 12:48:08,445 werkzeug          line:122  INFO      * Detected change in '/Users/vishnuprakashsrinivasan/Desktop/camp/camp/controller/delete_property.py', reloading
+2019-10-09 12:48:08,837 werkzeug          line:122  INFO      * Restarting with stat
+2019-10-09 12:48:09,690 werkzeug          line:122  WARNING   * Debugger is active!
+2019-10-09 12:48:09,698 werkzeug          line:122  INFO      * Debugger PIN: 203-563-375
+2019-10-09 12:48:10,745 werkzeug          line:122  INFO      * Detected change in '/Users/vishnuprakashsrinivasan/Desktop/camp/camp/controller/delete_property.py', reloading
+2019-10-09 12:48:11,196 werkzeug          line:122  INFO      * Restarting with stat
+2019-10-09 12:48:12,046 werkzeug          line:122  WARNING   * Debugger is active!
+2019-10-09 12:48:12,052 werkzeug          line:122  INFO      * Debugger PIN: 203-563-375
+2019-10-09 12:48:20,325 werkzeug          line:122  INFO      * Detected change in '/Users/vishnuprakashsrinivasan/Desktop/camp/camp/controller/delete_property.py', reloading
+2019-10-09 12:48:20,614 werkzeug          line:122  INFO      * Restarting with stat
+2019-10-09 12:48:21,388 werkzeug          line:122  WARNING   * Debugger is active!
+2019-10-09 12:48:21,397 werkzeug          line:122  INFO      * Debugger PIN: 203-563-375
+2019-10-09 12:48:23,493 werkzeug          line:122  INFO      * Detected change in '/Users/vishnuprakashsrinivasan/Desktop/camp/camp/controller/delete_property.py', reloading
+2019-10-09 12:48:23,920 werkzeug          line:122  INFO      * Restarting with stat
+2019-10-09 12:48:24,719 werkzeug          line:122  WARNING   * Debugger is active!
+2019-10-09 12:48:24,726 werkzeug          line:122  INFO      * Debugger PIN: 203-563-375
+2019-10-09 12:48:26,807 werkzeug          line:122  INFO      * Detected change in '/Users/vishnuprakashsrinivasan/Desktop/camp/camp/controller/delete_property.py', reloading
+2019-10-09 12:48:27,245 werkzeug          line:122  INFO      * Restarting with stat
+2019-10-09 12:48:28,103 werkzeug          line:122  WARNING   * Debugger is active!
+2019-10-09 12:48:28,112 werkzeug          line:122  INFO      * Debugger PIN: 203-563-375
+2019-10-09 12:48:29,157 werkzeug          line:122  INFO      * Detected change in '/Users/vishnuprakashsrinivasan/Desktop/camp/camp/controller/delete_property.py', reloading
+2019-10-09 12:48:29,588 werkzeug          line:122  INFO      * Restarting with stat
+2019-10-09 12:48:30,389 werkzeug          line:122  WARNING   * Debugger is active!
+2019-10-09 12:48:30,397 werkzeug          line:122  INFO      * Debugger PIN: 203-563-375
+2019-10-09 12:48:37,615 werkzeug          line:122  INFO      * Detected change in '/Users/vishnuprakashsrinivasan/Desktop/camp/camp/controller/delete_property.py', reloading
+2019-10-09 12:48:37,944 werkzeug          line:122  INFO      * Restarting with stat
+2019-10-09 12:48:38,726 werkzeug          line:122  WARNING   * Debugger is active!
+2019-10-09 12:48:38,732 werkzeug          line:122  INFO      * Debugger PIN: 203-563-375
+2019-10-09 12:48:41,841 werkzeug          line:122  INFO      * Detected change in '/Users/vishnuprakashsrinivasan/Desktop/camp/camp/controller/delete_property.py', reloading
+2019-10-09 12:48:42,251 werkzeug          line:122  INFO      * Restarting with stat
+2019-10-09 12:48:43,038 werkzeug          line:122  WARNING   * Debugger is active!
+2019-10-09 12:48:43,046 werkzeug          line:122  INFO      * Debugger PIN: 203-563-375
+2019-10-09 12:48:47,190 werkzeug          line:122  INFO      * Detected change in '/Users/vishnuprakashsrinivasan/Desktop/camp/camp/controller/delete_property.py', reloading
+2019-10-09 12:48:47,579 werkzeug          line:122  INFO      * Restarting with stat
+2019-10-09 12:48:48,317 werkzeug          line:122  WARNING   * Debugger is active!
+2019-10-09 12:48:48,328 werkzeug          line:122  INFO      * Debugger PIN: 203-563-375
+2019-10-09 12:48:53,485 werkzeug          line:122  INFO      * Detected change in '/Users/vishnuprakashsrinivasan/Desktop/camp/camp/controller/delete_property.py', reloading
+2019-10-09 12:48:53,831 werkzeug          line:122  INFO      * Restarting with stat
+2019-10-09 12:48:54,637 werkzeug          line:122  WARNING   * Debugger is active!
+2019-10-09 12:48:54,643 werkzeug          line:122  INFO      * Debugger PIN: 203-563-375
+2019-10-09 12:49:36,857 werkzeug          line:122  INFO      * Detected change in '/Users/vishnuprakashsrinivasan/Desktop/camp/camp/controller/create_property.py', reloading
+2019-10-09 12:49:37,411 werkzeug          line:122  INFO      * Restarting with stat
+2019-10-09 12:49:38,223 werkzeug          line:122  WARNING   * Debugger is active!
+2019-10-09 12:49:38,231 werkzeug          line:122  INFO      * Debugger PIN: 203-563-375
+2019-10-09 12:49:40,308 werkzeug          line:122  INFO      * Detected change in '/Users/vishnuprakashsrinivasan/Desktop/camp/camp/controller/create_property.py', reloading
+2019-10-09 12:49:40,777 werkzeug          line:122  INFO      * Restarting with stat
+2019-10-09 12:49:41,684 werkzeug          line:122  WARNING   * Debugger is active!
+2019-10-09 12:49:41,691 werkzeug          line:122  INFO      * Debugger PIN: 203-563-375
+2019-10-09 12:49:45,825 werkzeug          line:122  INFO      * Detected change in '/Users/vishnuprakashsrinivasan/Desktop/camp/camp/controller/create_property.py', reloading
+2019-10-09 12:49:46,197 werkzeug          line:122  INFO      * Restarting with stat
+2019-10-09 12:49:47,011 werkzeug          line:122  WARNING   * Debugger is active!
+2019-10-09 12:49:47,020 werkzeug          line:122  INFO      * Debugger PIN: 203-563-375
+2019-10-09 12:49:50,126 werkzeug          line:122  INFO      * Detected change in '/Users/vishnuprakashsrinivasan/Desktop/camp/camp/controller/create_property.py', reloading
+2019-10-09 12:49:50,553 werkzeug          line:122  INFO      * Restarting with stat
+2019-10-09 12:49:51,385 werkzeug          line:122  WARNING   * Debugger is active!
+2019-10-09 12:49:51,391 werkzeug          line:122  INFO      * Debugger PIN: 203-563-375
+2019-10-09 12:49:52,445 werkzeug          line:122  INFO      * Detected change in '/Users/vishnuprakashsrinivasan/Desktop/camp/camp/controller/create_property.py', reloading
+2019-10-09 12:49:52,901 werkzeug          line:122  INFO      * Restarting with stat
+2019-10-09 12:49:53,707 werkzeug          line:122  WARNING   * Debugger is active!
+2019-10-09 12:49:53,717 werkzeug          line:122  INFO      * Debugger PIN: 203-563-375
+2019-10-09 12:49:54,763 werkzeug          line:122  INFO      * Detected change in '/Users/vishnuprakashsrinivasan/Desktop/camp/camp/controller/create_property.py', reloading
+2019-10-09 12:49:55,234 werkzeug          line:122  INFO      * Restarting with stat
+2019-10-09 12:49:56,217 werkzeug          line:122  WARNING   * Debugger is active!
+2019-10-09 12:49:56,225 werkzeug          line:122  INFO      * Debugger PIN: 203-563-375
+2019-10-09 12:50:00,376 werkzeug          line:122  INFO      * Detected change in '/Users/vishnuprakashsrinivasan/Desktop/camp/camp/controller/create_property.py', reloading
+2019-10-09 12:50:00,770 werkzeug          line:122  INFO      * Restarting with stat
+2019-10-09 12:50:01,752 werkzeug          line:122  WARNING   * Debugger is active!
+2019-10-09 12:50:01,758 werkzeug          line:122  INFO      * Debugger PIN: 203-563-375
+2019-10-09 12:50:03,842 werkzeug          line:122  INFO      * Detected change in '/Users/vishnuprakashsrinivasan/Desktop/camp/camp/controller/create_property.py', reloading
+2019-10-09 12:50:04,269 werkzeug          line:122  INFO      * Restarting with stat
+2019-10-09 12:50:05,217 werkzeug          line:122  WARNING   * Debugger is active!
+2019-10-09 12:50:05,225 werkzeug          line:122  INFO      * Debugger PIN: 203-563-375
+2019-10-09 12:50:09,372 werkzeug          line:122  INFO      * Detected change in '/Users/vishnuprakashsrinivasan/Desktop/camp/camp/controller/create_property.py', reloading
+2019-10-09 12:50:09,745 werkzeug          line:122  INFO      * Restarting with stat
+2019-10-09 12:50:10,518 werkzeug          line:122  WARNING   * Debugger is active!
+2019-10-09 12:50:10,525 werkzeug          line:122  INFO      * Debugger PIN: 203-563-375
+2019-10-09 12:50:14,670 werkzeug          line:122  INFO      * Detected change in '/Users/vishnuprakashsrinivasan/Desktop/camp/camp/controller/create_property.py', reloading
+2019-10-09 12:50:15,041 werkzeug          line:122  INFO      * Restarting with stat
+2019-10-09 12:50:16,094 werkzeug          line:122  WARNING   * Debugger is active!
+2019-10-09 12:50:16,104 werkzeug          line:122  INFO      * Debugger PIN: 203-563-375
+2019-10-09 15:49:49,932 werkzeug          line:122  INFO      * Running on http://0.0.0.0:2000/ (Press CTRL+C to quit)
+2019-10-09 15:49:49,936 werkzeug          line:122  INFO      * Restarting with stat
+2019-10-09 15:49:50,659 werkzeug          line:122  WARNING   * Debugger is active!
+2019-10-09 15:49:50,671 werkzeug          line:122  INFO      * Debugger PIN: 203-563-375
+2019-10-09 15:49:53,392 werkzeug          line:122  INFO     127.0.0.1 - - [09/Oct/2019 15:49:53] "GET /todo/5d77514978f2de903f113a2b HTTP/1.1" 200 -
+2019-10-09 15:49:58,142 werkzeug          line:122  INFO     127.0.0.1 - - [09/Oct/2019 15:49:58] "POST /api/add_todo HTTP/1.1" 200 -
+2019-10-10 18:19:06,165 werkzeug          line:122  INFO      * Running on http://0.0.0.0:2000/ (Press CTRL+C to quit)
+2019-10-10 18:19:06,169 werkzeug          line:122  INFO      * Restarting with stat
+2019-10-10 18:19:07,037 werkzeug          line:122  WARNING   * Debugger is active!
+2019-10-10 18:19:07,054 werkzeug          line:122  INFO      * Debugger PIN: 203-563-375
+2019-10-10 18:19:24,535 werkzeug          line:122  INFO     127.0.0.1 - - [10/Oct/2019 18:19:24] "GET /login HTTP/1.1" 200 -
+2019-10-10 18:19:24,657 werkzeug          line:122  INFO     127.0.0.1 - - [10/Oct/2019 18:19:24] "GET /static/css/style.css HTTP/1.1" 200 -
+2019-10-10 18:19:24,661 werkzeug          line:122  INFO     127.0.0.1 - - [10/Oct/2019 18:19:24] "GET /static/images/logo.svg HTTP/1.1" 200 -
+2019-10-10 18:19:24,667 werkzeug          line:122  INFO     127.0.0.1 - - [10/Oct/2019 18:19:24] "GET /static/js/register-page.js HTTP/1.1" 200 -
+2019-10-10 18:19:26,425 werkzeug          line:122  INFO     127.0.0.1 - - [10/Oct/2019 18:19:26] "GET /favicon.ico HTTP/1.1" 404 -
+2019-10-10 18:19:50,850 werkzeug          line:122  INFO     127.0.0.1 - - [10/Oct/2019 18:19:50] "POST /login HTTP/1.1" 302 -
+2019-10-10 18:19:51,171 werkzeug          line:122  INFO     127.0.0.1 - - [10/Oct/2019 18:19:51] "POST /login HTTP/1.1" 302 -
+2019-10-10 18:19:51,471 werkzeug          line:122  INFO     127.0.0.1 - - [10/Oct/2019 18:19:51] "GET /5d77513d78f2de903f113a2a/dashboard HTTP/1.1" 200 -
+2019-10-10 18:19:51,472 werkzeug          line:122  INFO     127.0.0.1 - - [10/Oct/2019 18:19:51] "GET /5d77513d78f2de903f113a2a/dashboard HTTP/1.1" 200 -
+2019-10-10 18:19:51,548 werkzeug          line:122  INFO     127.0.0.1 - - [10/Oct/2019 18:19:51] "GET /static/images/horizontal.svg HTTP/1.1" 200 -
+2019-10-10 18:19:51,560 werkzeug          line:122  INFO     127.0.0.1 - - [10/Oct/2019 18:19:51] "GET /static/common_lib/css/flexdatalist.css HTTP/1.1" 200 -
+2019-10-10 18:19:51,562 werkzeug          line:122  INFO     127.0.0.1 - - [10/Oct/2019 18:19:51] "GET /static/images/rename.svg HTTP/1.1" 200 -
+2019-10-10 18:19:51,562 werkzeug          line:122  INFO     127.0.0.1 - - [10/Oct/2019 18:19:51] "GET /static/images/close.svg HTTP/1.1" 200 -
+2019-10-10 18:19:51,562 werkzeug          line:122  INFO     127.0.0.1 - - [10/Oct/2019 18:19:51] "GET /static/common_lib/js/flexdatalist.js HTTP/1.1" 200 -
+2019-10-10 18:19:51,572 werkzeug          line:122  INFO     127.0.0.1 - - [10/Oct/2019 18:19:51] "GET /static/images/delete.svg HTTP/1.1" 200 -
+2019-10-10 18:19:54,429 werkzeug          line:122  INFO     127.0.0.1 - - [10/Oct/2019 18:19:54] "GET /todo/5d9c5452a2eaa4b14fa33326 HTTP/1.1" 200 -
+2019-10-10 18:19:57,964 werkzeug          line:122  INFO     127.0.0.1 - - [10/Oct/2019 18:19:57] "GET /todo/5d89f6508e7662ef6f4a7ddf HTTP/1.1" 200 -
+2019-10-10 18:19:59,202 werkzeug          line:122  INFO     127.0.0.1 - - [10/Oct/2019 18:19:59] "GET /todo/todo_list/5d9d6f8d89d5618daa880e43 HTTP/1.1" 200 -
+2019-10-10 18:20:20,238 camp.controller.create_property line:150  INFO     The task "The task is to create a new task" is created
+2019-10-10 18:20:20,392 werkzeug          line:122  INFO     127.0.0.1 - - [10/Oct/2019 18:20:20] "POST /api/5d9d6f8d89d5618daa880e43/todo_list HTTP/1.1" 200 -
+2019-10-10 18:21:37,195 werkzeug          line:122  INFO      * Detected change in '/Users/vishnuprakashsrinivasan/Desktop/camp/camp/controller/create_property.py', reloading
+2019-10-10 18:21:37,713 werkzeug          line:122  INFO      * Restarting with stat
+2019-10-10 18:21:39,639 werkzeug          line:122  WARNING   * Debugger is active!
+2019-10-10 18:21:39,653 werkzeug          line:122  INFO      * Debugger PIN: 203-563-375
+2019-10-10 18:21:48,921 werkzeug          line:122  INFO      * Detected change in '/Users/vishnuprakashsrinivasan/Desktop/camp/camp/controller/create_property.py', reloading
+2019-10-10 18:21:49,213 werkzeug          line:122  INFO      * Restarting with stat
+2019-10-10 18:21:51,306 werkzeug          line:122  WARNING   * Debugger is active!
+2019-10-10 18:21:51,322 werkzeug          line:122  INFO      * Debugger PIN: 203-563-375
+2019-10-10 18:23:33,407 camp.controller.create_property line:150  INFO     The task 5d9f29cdaadbbad546689d6f is created
+2019-10-10 18:23:33,891 werkzeug          line:122  INFO     127.0.0.1 - - [10/Oct/2019 18:23:33] "POST /api/5d9d6f8d89d5618daa880e43/todo_list HTTP/1.1" 200 -
+2019-10-10 18:25:01,497 werkzeug          line:122  INFO      * Detected change in '/Users/vishnuprakashsrinivasan/Desktop/camp/camp/controller/create_property.py', reloading
+2019-10-10 18:25:01,745 werkzeug          line:122  INFO      * Restarting with stat
+2019-10-10 18:25:03,675 werkzeug          line:122  WARNING   * Debugger is active!
+2019-10-10 18:25:03,684 werkzeug          line:122  INFO      * Debugger PIN: 203-563-375
+2019-10-10 18:25:04,744 werkzeug          line:122  INFO      * Detected change in '/Users/vishnuprakashsrinivasan/Desktop/camp/camp/controller/create_property.py', reloading
+2019-10-10 18:25:05,185 werkzeug          line:122  INFO      * Restarting with stat
+2019-10-10 18:25:05,975 werkzeug          line:122  WARNING   * Debugger is active!
+2019-10-10 18:25:05,986 werkzeug          line:122  INFO      * Debugger PIN: 203-563-375
+2019-10-10 18:25:09,081 werkzeug          line:122  INFO      * Detected change in '/Users/vishnuprakashsrinivasan/Desktop/camp/camp/controller/create_property.py', reloading
+2019-10-10 18:25:09,506 werkzeug          line:122  INFO      * Restarting with stat
+2019-10-10 18:25:10,449 werkzeug          line:122  WARNING   * Debugger is active!
+2019-10-10 18:25:10,456 werkzeug          line:122  INFO      * Debugger PIN: 203-563-375
+2019-10-10 18:25:12,528 werkzeug          line:122  INFO      * Detected change in '/Users/vishnuprakashsrinivasan/Desktop/camp/camp/controller/create_property.py', reloading
+2019-10-10 18:25:12,968 werkzeug          line:122  INFO      * Restarting with stat
+2019-10-10 18:25:13,754 werkzeug          line:122  WARNING   * Debugger is active!
+2019-10-10 18:25:13,762 werkzeug          line:122  INFO      * Debugger PIN: 203-563-375
+2019-10-10 18:25:24,047 werkzeug          line:122  INFO      * Detected change in '/Users/vishnuprakashsrinivasan/Desktop/camp/camp/controller/create_property.py', reloading
+2019-10-10 18:25:24,388 werkzeug          line:122  INFO      * Restarting with stat
+2019-10-10 18:25:26,251 werkzeug          line:122  WARNING   * Debugger is active!
+2019-10-10 18:25:26,258 werkzeug          line:122  INFO      * Debugger PIN: 203-563-375
+2019-10-10 18:25:29,366 werkzeug          line:122  INFO      * Detected change in '/Users/vishnuprakashsrinivasan/Desktop/camp/camp/controller/create_property.py', reloading
+2019-10-10 18:25:29,751 werkzeug          line:122  INFO      * Restarting with stat
+2019-10-10 18:25:30,548 werkzeug          line:122  WARNING   * Debugger is active!
+2019-10-10 18:25:30,556 werkzeug          line:122  INFO      * Debugger PIN: 203-563-375
+2019-10-10 18:25:38,799 werkzeug          line:122  INFO      * Detected change in '/Users/vishnuprakashsrinivasan/Desktop/camp/camp/controller/create_property.py', reloading
+2019-10-10 18:25:39,090 werkzeug          line:122  INFO      * Restarting with stat
+2019-10-10 18:25:40,026 werkzeug          line:122  WARNING   * Debugger is active!
+2019-10-10 18:25:40,033 werkzeug          line:122  INFO      * Debugger PIN: 203-563-375
+2019-10-10 18:26:30,380 werkzeug          line:122  INFO      * Detected change in '/Users/vishnuprakashsrinivasan/Desktop/camp/camp/controller/create_property.py', reloading
+2019-10-10 18:26:30,934 werkzeug          line:122  INFO      * Restarting with stat
+2019-10-10 19:08:15,111 werkzeug          line:122  INFO      * Running on http://0.0.0.0:2000/ (Press CTRL+C to quit)
+2019-10-10 19:08:15,114 werkzeug          line:122  INFO      * Restarting with stat
+2019-10-10 19:08:15,863 werkzeug          line:122  WARNING   * Debugger is active!
+2019-10-10 19:08:15,872 werkzeug          line:122  INFO      * Debugger PIN: 203-563-375
+2019-10-10 19:08:19,646 werkzeug          line:122  INFO     127.0.0.1 - - [10/Oct/2019 19:08:19] "GET /todo/todoset/5d9f29cdaadbbad546689d6f HTTP/1.1" 200 -
+2019-10-10 19:08:19,713 werkzeug          line:122  INFO     127.0.0.1 - - [10/Oct/2019 19:08:19] "GET /static/images/arrow-point-to-right.svg HTTP/1.1" 200 -
+2019-10-10 19:09:04,330 werkzeug          line:122  INFO     127.0.0.1 - - [10/Oct/2019 19:09:04] "GET /api/delete?task_id=5d9f29cdaadbbad546689d6f HTTP/1.1" 200 -
+2019-10-10 19:09:04,503 werkzeug          line:122  INFO     127.0.0.1 - - [10/Oct/2019 19:09:04] "GET /todo/todo_list/5d9d6f8d89d5618daa880e43 HTTP/1.1" 200 -

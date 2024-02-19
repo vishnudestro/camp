@@ -1,0 +1,826 @@
+a{
+    outline: 0;
+}
+.pannel-top{
+    margin-top: 40px !important;
+}
+.pannel{
+    padding: 0 26px;
+    margin: 0 auto 40px;
+    max-width: 768px;
+    height: 100%
+}
+.pannel-top .center{
+    text-align: center;
+    margin-bottom: 36px;
+}
+.pannel-top .pannel-header{
+    font-size: 28px;
+    margin-bottom: 18.76px;
+    font-weight: 600;
+    line-height: 1.2;
+    color: #283c46;
+    display: block;
+    margin-block-start: 0.25em;
+    margin-block-end: 0.67em;
+}
+.pannel-top .welcome-step-1{
+    max-width: 60rem;
+    margin: 0 auto;
+}
+.welcome-step-1 .wc-1{
+    width: 100%;
+    max-width: 55rem;
+    display: inline-block;
+    position: relative;
+    text-align: left;
+    padding: 0px 80px;
+}
+.pannel-top .welcome-step-1 .wc-1 .card-1{
+    width: 100%;
+    background-color: white;
+    padding: 60px;
+    box-shadow: 0 -1px 10px rgba(0,0,0,0.05),0 1px 4px rgba(0,0,0,0.1),0 10px 30px #f3ece8;
+    border-radius: 3px;
+    transition: left 1s ease-in-out;
+}
+.card-1 h1{
+    color: #283c46;
+    font-size: 24px;
+    line-height: 1.2;
+    font-weight: normal;
+    margin-bottom: 0.625em !important;
+}
+.card-1 p{
+    color: #6d6d6d;
+}
+.card-1 input{
+    width: 100%;
+    margin: 0px;
+    padding: 0;
+    margin-bottom: 0.3125em !important;
+    border: 1px solid #d9d9d9;
+    border-radius: 4px;
+    line-height: 1.5;
+    padding: 12px 0px 12px 10px;
+}
+.card-1 input::placeholder{
+    color: #8c9db9;
+    font-weight: normal;
+}
+.card-1 input:focus{
+    outline: none;
+    border-color: #a4d2ff;
+    box-shadow: 0 0 6px rgba(27,106,201,0.5);
+}
+.card-1 button{
+    margin-top: 16px;
+    background-color: #2da562;
+    border-color: #2da562;
+    color: #fff;
+    border-radius: 24px;
+    padding: 8px 16px;
+    border: 1px solid #d9d9d9;
+}
+.card-1 button:active{
+    background-color: #227d4a;
+    border-color: #227d4a;
+    box-shadow: 0 0 8px rgba(0,0,0,0.25);
+    outline: none;
+}
+.card-1 button:focus{
+    outline: none;
+}
+.step-div{
+    text-align: center;
+    margin-top: -70px;
+    margin-bottom: 50px
+}
+.wc-1 .card-step{
+    background: #725ead;
+    color: white;
+    padding: 10px 22px;
+    border-radius: 80px;
+}
+.setcheckaccount {
+    display: block;
+    position: relative;
+    padding-left: 32px;
+    margin-bottom: 8px;
+    cursor: pointer;
+    font-size: 18px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+/* Hide the browser's default checkbox */
+.setcheckaccount input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+/* Create a custom checkbox */
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    border: 1px solid gray;
+    border-radius: 6px;
+    opacity: 0.4;
+}
+/* When the checkbox is checked, add a blue background */
+.setcheckaccount input:checked ~ .checkmark {
+    background-color: #2da562;
+    opacity: 1;
+}
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+/* Show the checkmark when checked */
+.setcheckaccount input:checked ~ .checkmark:after {
+    display: block;
+}
+/* Style the checkmark/indicator */
+.setcheckaccount .checkmark:after {
+    left: 9px;
+    top: 5px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+/* User signup styles */
+.user-signup{
+    width: 100%;
+    max-width: 38rem;
+    display: inline-block;
+    position: relative;
+    text-align: left;
+    padding: 0px 80px;
+}
+.user-style{
+    width: 100%;
+    background-color: white;
+    padding: 40px;
+    box-shadow: 0 -1px 10px rgba(0,0,0,0.05),0 1px 4px rgba(0,0,0,0.1),0 10px 30px #f3ece8;
+    border-radius: 6px;
+}
+.user-style h1{
+    font-weight: bold;
+    font-size: 19px;
+    line-height: 1.2;
+    text-align: center;
+    color: black;
+    margin-bottom: 15px;
+}
+.user-style button{
+    width: 100%;
+    padding: 10px 15px;
+    border: 1px solid #bfbfbf;
+    border-color: rgba(0,0,0,0.15);
+    border-radius: 4px;
+    background-color: #fff;
+    font-weight: bold;
+    font-size: 17px;
+    border-bottom-width: 2px;
+}
+.user-style p{
+    color:#7f7f7f;
+    text-align: center;
+    margin: 1.2em 0;
+    font-size: 17px;
+}
+.user-details{
+    background: url(./img/background-img.png)0 0 no-repeat;
+    width: 100%;
+    height: 140px;
+}
+.user-details .img{
+    height: 128px;
+    width: 128px;
+    background: #e9eef0;
+    border-radius: 100%;
+    position: relative;
+    border: 1px solid #d9d9d9;
+    margin: 24px auto 10px;
+}
+.user-details .img::before{
+    content: '?';
+    position: absolute;
+    top: 0;
+    left: 10;
+    width: 100%;
+    line-height: 128px;
+    font-size: 72px;
+    color: #fff;
+    margin-left: 40px;
+}
+.add-img-container{
+    width: 100%;
+    text-align: center
+}
+.add-img{
+    opacity: 0.1;
+    width: 100px;
+    display: none;
+}
+.add-img-container label{
+    cursor: pointer;
+    background-color: #1b6ac9;
+    border-color: #1b6ac9;
+    border-bottom-color: rgba(0,0,0,0.15);
+    color: white;
+    padding: 6px 10px;
+    font-size: 13px;
+    border-radius: 4px;
+    border-bottom-width: 2px;
+    font-weight: bold;
+}
+.user-ip{
+    margin-bottom: 14px;
+}
+.user-ip input{
+    border: 1px solid #d9d9d9;
+    border-radius: 4px;
+    line-height: 1.5;
+    padding: 10px;
+    margin: 0;
+    width: 100%
+}
+.user-ip button{
+    background-color: #2da562;
+    border-color: #2da562;
+    border-bottom-color: rgba(0,0,0,0.15);
+    color: #fff;
+}
+.user-ip input:focus{
+    outline: none;
+    border-color: #a4d2ff;
+    box-shadow: 0 0 6px rgba(27,106,201,0.5);
+}
+.user-ip p{
+    margin:0;
+    text-align: left;
+    font-size: 13px;
+    color: black;
+    font-weight: normal
+}
+.user-ip label{
+    margin: 0;
+    font-size: 17px;
+    font-weight: bold;
+}
+.testclass{
+    color: red;
+}
+
+.user-style .sign-in-ip{
+    border: 1px solid #d9d9d9;
+    border-radius: 4px;
+    line-height: 1.5;
+    padding: 10px;
+    margin: 0 0 14px 0;
+    width: 100%
+}
+.user-style .sign-in-ip:focus{
+    outline: none;
+    border-color: #a4d2ff;
+    box-shadow: 0 0 6px rgba(27,106,201,0.5);
+}
+.user-style h2{
+    font-size: 17px;
+    font-weight: bold;
+    margin: 0;
+}
+.help-card p{
+    text-align: center;
+    font-size: 15px;
+    font-weight: bold;
+}
+.help-card a{
+    text-decoration: underline;
+    font-weight: normal;
+}
+#password-div{
+    display: none;
+}
+#login-button{
+    display: none;
+}
+.card-1 .error-message{
+    display: none;
+    color:#d4442e;
+    margin: 0;
+    margin-bottom: 8px !important;
+    font-size: 16px;
+}
+.invalid:focus{
+    border-color: #d4442e !important;
+    box-shadow: 0 0 1px #d4442e !important;
+}
+.valid:focus{
+    outline: none;
+    border-color: #a4d2ff;
+    box-shadow: 0 0 6px rgba(27,106,201,0.5);
+}
+.errormsg{
+    font-size: 12px;
+    color: #d4442e;
+}
+.home-styles h1{
+    text-align: center;
+    font-size: 20px;
+    color: #283c4b;
+    font-weight: bold;
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: none !important;
+}
+.card-design h6{
+    text-align: center;
+    margin: 0;
+    color: #877457;
+    font-size: 20px;
+}
+.card-spacing{
+    margin: 16px 0 10px 0;
+}
+.card-spacing button{
+    background-color: #fff;
+    border: 1px solid #d9d9d9;
+    border-radius: 24px;
+    font-size: 14px;
+    padding: 0 12px;
+}
+.team-page{
+    height: auto;
+    min-height: 700px;
+    background-color: white;
+    box-shadow: 0 -1px 10px rgba(0,0,0,0.05),0 1px 4px rgba(0,0,0,0.1),0 10px 30px #f3ece8;
+    margin: 10px 50px 40px 50px !important;
+    border-radius: 4px;
+}
+.team-page .team-title{
+    margin: 50px 10px;
+    text-align: center;
+}
+.team-page .team-title h1{
+    text-align: center;
+    font-size: 32px;
+    color: #283c46;
+    font-weight: bold;
+}
+.team-page .team-title button{
+    font-size: 12px;
+    background-color: #ffffff;
+    border: 1px solid #bfbfbf;
+    padding: 4px 8px;
+    border-radius: 24px;
+    outline: 0;
+}
+.navBar{
+    background-color: white;
+    width: 100%;
+    height: 42px;
+    border-bottom: 1px solid rgba(0,0,0,0.03);
+    box-shadow: 0 1px 4px rgba(0,0,0,0.1),0 10px 30px #f3ece8;
+    border-radius: 3px;
+    text-align: center;
+    padding: 10px;
+}
+.navBar h6{
+    margin: 0;
+    color: #1b6ac9;
+    font-weight: bold;
+    cursor: pointer;
+}
+.to-do-row{
+    margin-bottom: 20px;
+    padding: 0 !important;
+}
+.to-do-card{
+    background-color: white;
+    width: 100%;
+    height: auto;
+    min-height: 800px;
+    box-shadow: 0 -1px 10px rgba(0,0,0,0.05),0 1px 4px rgba(0,0,0,0.1),0 10px 30px #f3ece8;
+    border-radius: 0.2em 0.2em 0 0;
+    padding: 50px !important;
+}
+.to-do-card .card-title{
+    padding: 16px;
+    margin: 0 20px;
+    border-bottom: 3px solid #283c46;
+}
+.to-do-card .card-title button{
+    background-color: #596568;
+    border: 1px solid #596568;
+    color: #fff;
+    border-radius: 16px;
+    font-size: 14px;
+    padding:4px 10px;
+    vertical-align: middle;
+    margin-top: 5px;
+}
+.to-do-card .card-title h6{
+    font-size: 32px;
+    font-weight: bold;
+    margin: 0;
+    text-align: center;
+}
+
+.to-do-card .input-card-body{
+    padding: 30px 80px 0 80px;
+    display: none;
+}
+.to-do-card .input-card-body .input-card-list{
+    width: 100%;
+    height: auto; 
+    background-color: white;
+    box-shadow: 0 0 2px rgba(0,0,0,0.35), 0 1px 3px rgba(0,0,0,0.1);
+    border-radius: 4px;
+    padding: 0;
+    margin:0 4px;
+}
+.input-card-list input{
+    width: 100%;
+    line-height: 1.5;
+    border: none;
+}
+.input-card-list button{
+    background-color: #fff;
+    border: 1px solid #d9d9d9;
+    border-radius: 24px;
+    font-size: 15px;
+    padding: 4px 12px;
+}
+
+.add-to-do .form-card{
+    padding: 16px;
+}
+#list-form-card{
+    display: none;
+}
+.to-do-card .add-to-do{
+    border: 1px solid #e5e5e5;
+    height: auto;
+    border-radius: 5px;
+}
+.form-card input{
+    width: 100%;
+    border: none;
+}
+.form-card input::placeholder{
+    color: #a9a9a9;
+}
+.form-card input:focus{
+    border: none;
+    outline: none;
+}
+.form-card .form-data .row{
+    padding: 10px;
+    position: relative;
+    color: #283c46;
+}
+.form-card .form-data p{
+    text-align: right;
+    color: #283c46;
+    margin: 0;
+}
+.form-card .form-data button{
+    background-color: #596568;
+    border: 1px solid #596568;
+    color: white;
+    border-radius: 24px;
+    padding: 4px 8px;
+    font-size: 12px;
+}
+.multiple-input-field{
+    display: none;
+}
+.specific-input-field{
+    display: none;
+}
+.todo-container {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+.todo-container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+.todo-checkmark {
+    position: absolute;
+    top: 8px;
+    left: 0;
+    height: 20px;
+    width: 20px;
+    background-color: #eee;
+    border-radius: 4px;
+}
+.todo-container:hover input ~ .todo-checkmark {
+    background-color: #ccc;
+}
+.todo-container input:checked ~ .todo-checkmark {
+    background-color: #2da562;
+}
+.todo-checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+.todo-container input:checked ~ .todo-checkmark:after {
+    display: block;
+}
+.todo-container .todo-checkmark:after {
+    left: 6px;
+    top: 2px;
+    width: 8px;
+    height: 14px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+.todo-container a{
+    color:#283c46;
+}
+.todo-container a:hover{
+    color:#283c46;
+}
+
+
+
+/* new styles */
+
+.common-card .col-sm-4, .col-md-4{
+    padding: 0;
+}
+.common-card .card{
+    margin: 4px !important;
+}
+.common-card .card-title{
+    font-size: 16px;
+    font-weight: 600;
+    color: #283c46;
+    margin: 0 !important;
+}
+.common-card .card-text{
+    font-size: 15px;
+    line-height: 1.2;
+}
+#team-card{
+    display: none;
+}
+#project-card{
+    display: none;
+}
+.append-card{
+    display: none;
+    position: absolute !important;
+    z-index: 1;
+    border: 1px solid rgba(0,0,0,0.1);
+    box-shadow: 0 0 4px rgba(0,0,0,0.1),0 5px 20px rgba(0,0,0,0.05);
+}
+.append-card .card-body{
+    padding: 12px;
+}
+.append-card input{
+    width: 100%;
+    background-color: #fff;
+    border: 1px solid #d9d9d9;
+    border-radius: 4px;
+    padding: 8px;
+}
+.append-card input::placeholder{
+    font-size: 16px;
+    font-weight: 600;
+    color: #767676;
+}
+.append-card button{
+    background-color: #2da562;
+    border-color: #2da562;
+    color: #fff;
+    padding: 4px 12px;
+    font-size: 14px;
+    margin-top: 4px;
+    margin-bottom: 12px;
+}
+.append-card input:focus{
+    outline: none;
+    border-color: #a4d2ff;
+    box-shadow: 0 0 6px rgba(27,106,201,0.5);
+}
+.todo-template .card{
+    box-shadow: 0 0 2px rgba(0,0,0,0.35),0 1px 3px rgba(0,0,0,0.1);
+    text-align: center;
+    min-height: 400px;
+    height: auto;
+}
+.todo-template h5{
+    color: #283c46;
+    font-size: 22px;
+    font-weight: bold;
+    border-bottom: 1px solid #d9d9d9;
+    padding-bottom: 10px;
+}
+.card-dashboard{
+    margin: 30px;
+    text-align: center;
+}
+.card-dashboard .col-md-4, .col-sm-4{
+    padding: 0;
+    margin: 0;
+}
+.card-dashboard .card{
+    margin: 8px;
+    height: 270px;
+}
+.card-dashboard .card-title{
+    border: none;
+    padding: 0;
+    font-size: 14px;
+    font-weight: 600;
+}
+.to-do-card .invite-card-body{
+    display: none;
+    padding: 30px 80px 0 80px;
+}
+.invite-card-body .input-card-list{
+    width: 100%;
+    height: auto; 
+    background-color: white;
+    box-shadow: 0 0 2px rgba(0,0,0,0.35), 0 1px 3px rgba(0,0,0,0.1);
+    border-radius: 4px;
+    padding: 0;
+    margin:0 4px;
+}
+#form-error-msg{
+    display: none;
+}
+#todo-title-error{
+    display: none;
+}
+.invite-card-styles{
+    text-decoration: none !important;
+}
+.discussion{
+    margin-top: 60px;
+}
+.discussion-title{
+    color:#283c46;
+    font-size:24px;
+    font-weight:bold;
+    overflow: hidden;
+    text-align: left;
+}
+.discussion-title:before,
+.discussion-title:after {
+    background-color: #000;
+    content: "";
+    display: inline-block;
+    height: 3px;
+    position: relative;
+    vertical-align: middle;
+    width: 50%;
+}
+.discussion-title:before {
+    right: 0.5em;
+    margin-left: -50%;
+}
+.discussion-title:after {
+    left: 0.5em;
+    margin-right: -50%;
+}
+#discussion-button{
+    background-color: #596568;
+    color: #fff;
+    border: 1px solid #596568;
+    border-radius: 24px;
+    padding: 6px 12px;
+}
+.discussion-input{
+    width:100%;
+    cursor: pointer;
+    color: #a9a9a9;
+    background-color: #fff;
+    border: 1px solid #d9d9d9;
+    border-radius: 4px;
+    line-height: 1.5;
+    padding: 6px 14px;
+}
+.chat-bubble{
+    overflow-y: auto;
+    padding: 0 16px;
+    display: flex;
+    height: 100%;
+    justify-content: flex-end;
+    flex-flow: column nowrap;
+}
+.chat-bubble .bubble-main-div{
+    display: flex;
+    flex-direction: column;
+}
+.chat-bubble .bubble-main-div .bubble-sub-div{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+}
+.chat-bubble .bubble-main-div .bubble-sub-div .bubble-content{
+    letter-spacing: 0.5px;
+    font-size: 12px;
+    font-weight: bold;
+    max-width: 256px;
+    min-height: 35px;
+    margin: 1px 0;
+    border-radius: 12px;
+    box-sizing: border-box;
+    background-color: #faf8f7;
+    color:#283c46;
+    padding: 7px 12px;
+    display: inline-block;
+    vertical-align: top;
+    text-align: left;
+    word-break: break-word;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+}
+.chat-bubble .bubble-main-div .bubble-sub-div .bubble-content span{
+    margin-left:8px;
+    color:#6d6d6d;
+    font-weight:normal
+}
+.chat-bubble .bubble-main-div .currentbubble-sub-div{
+    position: relative;
+    text-align: right;
+}
+.chat-bubble .bubble-main-div .currentbubble-sub-div .currentbubble-content{
+    letter-spacing: 0.5px;
+    font-size: 12px;
+    font-weight: bold;
+    background-color: #ecf9fd;
+    color:#283c46;
+    max-width: 256px;
+    min-height: 35px;
+    margin: 1px 0;
+    border-radius: 12px;
+    box-sizing: border-box;
+    padding: 7px 12px;
+    display: inline-block;
+    vertical-align: top;
+    text-align: left;
+    word-break: break-word;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+}
+.chat-bubble .bubble-main-div .currentbubble-sub-div .currentbubble-content span{
+    margin-right:8px;
+    color:#6d6d6d;
+    font-weight:normal
+}
+.team-option-hover:hover{
+    background-color: rgba(89,101,104,0.1);
+    cursor: pointer;
+    transition: 0.2s
+}
+.renameInput{
+    width:100%;
+    border: 1px solid #d9d9d9;
+    border-radius:4px;
+    padding:6px 12px;
+}
+.renameInput:focus{
+    outline: none;
+    border-color: #a4d2ff;
+    box-shadow: 0 0 6px rgba(27,106,201,0.5)
+}
+.todo-option-hover:hover{
+    background-color: #434c4e;
+    cursor: pointer;
+    transition: 0.3s
+}

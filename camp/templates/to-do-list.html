@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="stylesheet" href="/static/css/style.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+        <link rel="stylesheet" href="https://unpkg.com/easymde/dist/easymde.min.css">
+        <link rel="stylesheet" href="/static/common_lib/css/flexdatalist.css">
+        <title>To-do-list</title>
+    <style>
+        body,html{
+            width: 100%;
+            height: 100%;
+            background-color: #f6f2ef
+        }
+    </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="row">
+                <div class="col-12" style="text-align: center;font-size:16px;font-weight:bold;color: #596568;margin: 8px 0 0 0;">
+                    <a style="color: #596568" href="{{url_for('CAMP.dashboard', user_id = current_user.id)}}">Home</a>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                </div>
+                <div class="col-9 navBar">
+                    <div class="row">
+                        <div class="col-sm-12 col-md-12">
+                            <h6><a href="{{url_for('CAMP.view_todo', ref_id = output.ref_id)}}" style="text-decoration: underline;">{{output.ref_name}} To-dos</a></h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                </div>
+            </div>
+            <div class="row to-do-row">
+                <div class="col-1">
+                </div>
+                <div class="col-10" style="background-color: white;width: 100%;height: auto;min-height: 750px;box-shadow: 0 -1px 10px rgba(0,0,0,0.05),0 1px 4px rgba(0,0,0,0.1),0 10px 30px #f3ece8;border-radius: 0.2em 0.2em 0 0;padding: 0 0 50px 0;position: relative;overflow: hidden;">
+                    <div style="display:flex;justify-content:flex-end">
+                        <img onclick="showtodoOptions()" src="/static/images/horizontal.svg" style="margin:12px 16px;cursor:pointer">
+                        <div id="todo-options-div" style="background-color:#596568;width: 260px;height:auto;min-height: 160px;position: absolute;z-index: 1;display: flex;flex-direction: column;right: -280px;transition: 0.3s">
+                            <div style="display: flex;justify-content: flex-end;padding: 12px 16px;">
+                                <i onclick="hidetodoOptions()" class="material-icons" style="color:white;cursor: pointer">clear</i>
+                            </div>
+                            <div onclick="showtodotitleEdit('{{output.name}}','todotitle-{{output.todo_id}}')" class="todo-option-hover" style="color:white;padding: 8px 16px;display: flex;font-size: 14px;">
+                                <i class="material-icons" style="margin-right:8px">create</i> Edit
+                            </div>
+                            <div onclick="deletetodoCard('{{output.todo_id}}')" class="todo-option-hover" style="color:white;padding: 8px 16px;display: flex;font-size: 14px;">
+                                <i class="material-icons" style="margin-right:8px">delete</i> Put in the trash
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-1">
+                        </div>
+                        <div class="col-10" style="padding:0 60px;">
+                            <div id="todotitleEdit" style="width:100%;height: auto;border: 1px solid #e5e5e5;border-radius:8px;padding: 8px 24px;display: none">
+                                <div style="padding: 8px 0;border-bottom: 1px solid rgba(0,0,0,0.05);">
+                                    <input id="todotitle-{{output.todo_id}}" type="text" style="width:100%;border: 0;font-weight: bold" placeholder="Name this list...">
+                                </div>
+                                <div style="padding:12px 0">
+                                    <button onclick="updatetodoname('{{output.todo_id}}','todotitle-{{output.todo_id}}')" type="button" style="background-color: #596568;color: #fff;border: 1px solid #596568;border-radius: 24px;padding: 4px 16px;font-size: 14px;">Save changes</button>
+                                    <button onclick="hidetodotitleEdit('todotitle-{{output.todo_id}}')" type="button" style="background-color: #fff;color: #596568;border: 1px solid #596568;border-radius: 24px;padding: 4px 16px;font-size: 14px;outline: none">Discard changes</button>
+                                </div>
+                            </div>
+                            <div id="todotitle" style="font-size: 32px;font-weight:bold;color:#5f6e75;display: flex;justify-content: space-between">
+                                {{ output['name'] }}
+                            </div>
+                            <!-- lists -->
+                            <div class="listContainer" id="listContainer">
+                                {% for data in output['task_details'] %}
+                                    <div class="row" style="margin:0">
+                                        <label class="todo-container">
+                                            <a href="http://localhost:2000/todo/todoset/{{data.task_id}}">
+                                                {{ data.description }}
+                                            </a>
+                                            <input type="checkbox">
+                                            <span class="todo-checkmark"></span>
+                                        </label>
+                                    </div>
+                                {% endfor %}
+                            </div>
+                            <!-- end of lists -->
+                            <button id="showFormCard" style="background-color: #fff;border: 1px solid #d9d9d9;border-radius: 24px;padding: 4px 10px;font-size: 14px;outline: 0">Add a to-do</button>
+                            <p id="form-error-msg" style="color:red;font-size: 14px;">Please enter the description...</p>
+                            <div id="list-form-card" class="row add-to-do">
+                                <div class="col-12">   
+                                    <!-- form card -->
+                                    <div class="row form-card">
+                                        <div class="col-12">
+                                            <form class="form-data">
+                                                <div class="row">
+                                                    <div class="col-12">
+                                                        <input id="description" type="text" placeholder="Describe this to-do...">
+                                                    </div>
+                                                </div>
+                                                <div class="row" style="border-top: 1px solid rgba(0,0,0,0.05);">
+                                                    <div class="col-3">
+                                                        <p>Assigned to</p>
+                                                    </div>
+                                                    <div class="col-9">
+                                                        <input id="assigned" type='text' placeholder='Type names to assign...' class='flexdatalist' data-min-length='1' multiple='multiple' data-selection-required='1' data-value-property='id' list='assign_names' name='language22' >
+                                                            <datalist id="assign_names">
+                                                                {% for user in output['users'] %}
+                                                                    <option value="{{user._id}}">{{user.person_name}}</option>
+                                                                {% endfor %}
+                                                            </datalist> 
+                                                    </div>
+                                                </div>
+                                                <div class="row" style="border-top: 1px solid rgba(0,0,0,0.05);">
+                                                    <div class="col-3">
+                                                        <p>When done, notify</p>
+                                                    </div>
+                                                    <div class="col-9">
+                                                        <input id="notify" type='text' placeholder='Type names to assign...' class='flexdatalist' data-min-length='1' multiple='multiple' data-selection-required='1' data-value-property='id' list='assign_names' name='language22'>
+                                                            <datalist id="notify_names">
+                                                                {% for user in output['users'] %}
+                                                                    <option value="{{user._id}}">{{user.person_name}}</option>
+                                                                {% endfor %}
+                                                            </datalist> 
+                                                    </div>
+                                                </div>
+                                                <div class="row" style="border-top: 1px solid rgba(0,0,0,0.05);">
+                                                    <div class="col-3">
+                                                        <p>Due on</p>
+                                                    </div>
+                                                    <div class="col-9">
+                                                        <div class="row">
+                                                            <div class="col-1">
+                                                                <div class="row">
+                                                                    <div class="col-12">
+                                                                        <input id="no-date" type="radio" name="gender" value="No due date">
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-11">
+                                                                <div class="row">
+                                                                    <div class="col-12">
+                                                                        <label for="no-date">No due date</label>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="row">
+                                                                <div class="col-1">
+                                                                    <div class="row">
+                                                                        <div class="col-12">
+                                                                            <input id="specific-radio" type="radio" name="gender" value="A specific day">
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-11 specific-label">
+                                                                    <div class="row">
+                                                                        <div class="col-12">
+                                                                            <label for="specific-radio">A specific day</label>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-11 specific-input-field">
+                                                                    <div class="row">
+                                                                        <div class="col-12">
+                                                                            <input class="specific-date" id="specific-date" type="date">
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        <div class="row">
+                                                            <div class="col-1">
+                                                                <div class="row">
+                                                                    <div class="col-12">
+                                                                        <input id="multiple-radio" type="radio" name="gender" value="Runs for multiple days">
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-11 multiple-label">
+                                                                <div class="row">
+                                                                    <div class="col-12">
+                                                                        <label for="multiple-radio">Runs for multiple days</label>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-11 multiple-input-field" style="padding: 0 !important">
+                                                                <div class="row">
+                                                                    <div class="col-5">
+                                                                        <input type="date" id="start-date" placeholder="Start date...">
+                                                                    </div>
+                                                                    <div class="col-2">
+                                                                        to
+                                                                    </div>
+                                                                    <div class="col-5">
+                                                                        <input type="date" id="end-date" placeholder="End date...">
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-3" style="text-align: right;">
+                                                        <button  onclick="addListItems('{{output.todo_id}}')" type="button">Add this to-do</button>
+                                                    </div>  
+                                                    <div class="col-9">
+                                                        <button id="hideFormCard" style="background-color: #fff;border-color: #596568;color: #596568;outline: none" type="button">Cancel</button>
+                                                    </div>
+                                                </div>
+                                            </form>
+                                        </div> 
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="discussion">
+                                <h1 class="discussion-title">Discussion</h1>
+                                <div id="comment-container">
+                                    {% for comment_data in output['comment_list'] %}
+                                        <div class="card" style="width: auto;background: #faf8f7;border-radius: 20px ;padding: 15px 20px;margin: 20px 0;border:none">
+                                            <div class="card-body" style="padding:0 !important">
+                                                <h6 class="card-text" style="color:#283c46;font-weight:bold;font-size: 15px;">
+                                                    {% if comment_data.created_by.job_title != "" %}
+                                                        {{comment_data.created_by.person_name}},
+                                                        <span style="font-weight: normal"> {{comment_data.created_by.job_title}}</span>
+                                                    {% else %}
+                                                        {{comment_data.created_by.person_name}}
+                                                    {% endif %}
+                                                </h6>
+                                                <p class="card-text" id="comment-text">{{comment_data.comment|safe}}</p>
+                                            </div>
+                                        </div>
+                                    {% endfor %}
+                                </div>
+                                <!-- <input id="discussion-input" type="text" placeholder="Add a comment or upload a file..."> -->
+                                <textarea class="discussion-input" id="my-text-area" placeholder="Add a comment"></textarea>
+                                <button id="discussion-button" onclick="addComment('{{current_user.id}}', '{{output.todo_id}}')">Add this comment</button>
+                            </div>
+                        </div>
+                        <div class="col-1">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-1">
+                </div>
+            </div>
+        </div>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="/static/common_lib/js/flexdatalist.js"></script>
+    <script src="https://unpkg.com/easymde/dist/easymde.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/markdown-it/9.1.0/markdown-it.js"></script>
+    <script src="/static/js/register-page.js"></script>
+    </body>
+</html>

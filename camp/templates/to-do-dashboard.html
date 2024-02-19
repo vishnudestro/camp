@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="stylesheet" href="/static/css/style.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+        <title>To-do</title>
+    <style>
+        body,html{
+            width: 100%;
+            height: 100%;
+            background-color: #f6f2ef
+        }
+    </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 col-md-12" style="text-align: center;font-size:16px;font-weight:bold;color: #596568;margin: 8px 0 0 0;">
+                    <a style="color: #596568;outline: 0" href="{{url_for('CAMP.dashboard', user_id = current_user.id)}}">Home</a>
+                </div>
+            </div>
+            <div class="row to-do-row">
+                <div class="col-md">
+                </div>
+                <div class="col-md-10 to-do-card" style="margin-top:8px">
+                    <div class="row card-title">
+                        <div class="col-md-4">
+                            <button id="showlist" type="button">New list</button>
+                        </div>
+                        <div class="col-md-4">
+                            <h6>{{output.ref_name}} To-dos</h6>
+                        </div>
+                        <div class="col-md-4" style="text-align:right">
+                            <button type="button" style="background-color: white;">
+                                <a style="color:#283c4b;outline: 0" href="{{url_for('CAMP.add_people', id = output['ref_id'])}}">
+                                    Invite some people
+                                </a>
+                            </button>
+                        </div>
+                    </div>
+                    <!-- input card -->
+                    <div class="row input-card-body">
+                        <div class="col-md-12  input-card-list">
+                            <div class="row" style="padding:20px;">
+                                <div class="col-md-12">
+                                    <input id="list-title" type="text" placeholder="Name this list...">
+                                    <p id="todo-title-error" style="color:red;font-size: 14px;">Please enter the description...</p>
+                                </div>
+                            </div>
+                            <div class="row" style="padding:0 10px 16px 10px;">
+                                <div class="col-md-12">
+                                    <button id="listsubmit" onclick="addtodoTitle('{{ref_id}}')" type="button" style="background-color:#2da562;border-color: #2da562;color: #fff;">Add this list</button>
+                                    <button id="hidelist" type="button" style="outline: 0;background-color: #fff;border-color: #2da562;color: #2da562;">Cancel</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end of card -->
+                    <div class="row card-dashboard">
+                        <div class="col-sm col-md">
+                        </div>
+                        <div class="col-sm-8 col-md-8">
+                            <div class="row" id="to-do-card">
+                                {% for todo in output['data'] %}
+                                    <div class="col-sm -4 col-md-4">
+                                        <div class="card" style="width: auto;">
+                                            <div class="card-body">
+                                                <h5 class="card-title">
+                                                <a style="color: #596568;outline: 0" href="{{url_for('CAMP.view_todo_list', todo_id = todo['_id'])}}">
+                                                    {{ todo['title'] }}
+                                                </a>
+                                                </h5>
+                                            </div>
+                                        </div>
+                                    </div>
+                                {% endfor %}
+                            </div>
+                        </div>
+                        <div class="col-sm col-md">
+                        </div>
+                    </div> 
+                </div>
+                <div class="col-md">
+                </div>
+            </div>
+        </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="/static/js/register-page.js"></script>
+    </body>
+</html>

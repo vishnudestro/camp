@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="stylesheet" href="/static/css/style.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" >
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons"rel="stylesheet">
+        <link rel="stylesheet" href="https://unpkg.com/easymde/dist/easymde.min.css">
+        <link rel="stylesheet" href="/static/common_lib/css/flexdatalist.css">
+        <title>flex</title>
+    <style>
+        body, html{
+            width: 100%;
+            height: 100%;
+            margin: 0;
+            background-color: #f6f2ef;
+        }
+        .fullwidth{
+            width: 100%;
+            height:100%;
+            margin: 0
+        }
+        .discussion-text{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .discussion-text:after{
+            background: black;
+            height: 2px;
+            flex: 1;
+            content: '';
+        }
+    </style>
+    </head>
+    <body>
+        <div class="row fullwidth">
+            <div class="col-sm col-md" style="padding:0">
+            </div>
+            <div class="col-sm-8 col-md-8" style="width:100%;height:100%;display: flex;padding: 0;flex-direction: column;">
+                <div style="text-align:center;font-size: 16px;font-weight: bold;">
+                    <a style="color: #596568" href="{{url_for('CAMP.dashboard', user_id = current_user.id)}}">
+                        Home
+                    </a>
+                </div>
+                <div class="row" style="display:flex;justify-content:space-around">
+                    <div class="col-sm col-md" style="padding:0">
+                    </div>
+                    <div class="col-sm-10 col-md-10" style="background-color:white;padding:8px 12px;border-bottom: 1px solid rgba(0,0,0,0.03);box-shadow: 0 1px 4px rgba(0,0,0,0.1),0 10px 30px #f3ece8;border-radius: 3px;text-align: center;font-weight: bold;">
+                        <a href="{{url_for('CAMP.view_todo', ref_id = output.ref_id)}}" style="text-decoration: underline;">
+                            {{output.ref_name}} To-dos
+                        </a>
+                        <img style="width:6px;height:6px;" src="/static/images/arrow-point-to-right.svg"> 
+                        <a href="http://localhost:2000/todo/todo_list/{{output.todo_id}}" style="text-decoration: underline;">
+                            {{output.name}}
+                        </a>
+                    </div>
+                    <div class="col-sm col-md" style="padding:0">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm col-md">
+                        <div style="background-color:white;min-height: 600px;height: auto;box-shadow: 0 -1px 10px rgba(0,0,0,0.05),0 1px 4px rgba(0,0,0,0.1),0 10px 30px #f3ece8;border-radius: 0.2em 0.2em 0 0;z-index: 0;position: relative;overflow: hidden">
+                            <div style="display:flex;justify-content:flex-end;">
+                                <img onclick="showtodoOptions()" src="/static/images/horizontal.svg" style="cursor:pointer;margin: 12px 16px;">
+                                <div id="todo-options-div" style="background-color:#596568;width: 260px;height:auto;min-height: 160px;position: absolute;z-index: 1;display: flex;flex-direction: column;transition: 0.3s;right: -280px">
+                                    <div style="display: flex;justify-content: flex-end;padding: 12px 16px;">
+                                        <i onclick="hidetodoOptions()" class="material-icons" style="color:white;cursor: pointer">clear</i>
+                                    </div>
+                                    <div onclick="editSingleTodo()" class="todo-option-hover" style="color:white;padding: 8px 16px;display: flex;font-size: 14px;">
+                                        <i class="material-icons" style="margin-right:8px">create</i> Edit
+                                    </div>
+                                    <div onclick="singleTodoDelete('{{output.task_id}}')" class="todo-option-hover" style="color:white;padding: 8px 16px;display: flex;font-size: 14px;">
+                                        <i class="material-icons" style="margin-right:8px">delete</i> Put in the trash
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row" style="margin:0">
+                                <div class="col-sm col-md" style="padding:0"></div>
+                                <div class="col-sm-9 col-md-9" style="padding:0;width: 100%">
+                                    <!-- todo edit form -->
+                                    <div id="single-todo-edit" style="border: 1px solid #e5e5e5; padding: 16px;display: none">
+                                        <div style="padding:10px 0;display: flex;">
+                                            <div style="width:25%;margin-right: 12px;text-align: right"></div>
+                                            <div style="width:73%;color: #283c46;font-weight: bold;font-size: 26px;">
+                                                <input style="border:none" id="tododescription" type="text">
+                                            </div>  
+                                        </div>
+                                        <div style="padding:10px 0;border-top: 1px solid rgba(0,0,0,0.05);display: flex;">
+                                            <div style="width:25%;margin-right: 12px;text-align: right;font-weight: bold;">Assigned to</div>
+                                            <div style="width:73%">
+                                                <input style="border: none" id="singleassigned" type='text' placeholder='Type names to assign...' class='flexdatalistss' data-min-length='1' multiple='multiple' data-selection-required='1' data-value-property='value' list='single_names' name='language22'>
+                                                <datalist id="single_names">
+                                                    {% for user in output['user_data'] %}
+                                                        <option value="{{user._id}}">{{user.person_name}}</option>
+                                                    {% endfor %}
+                                                </datalist> 
+                                            </div>
+                                        </div>
+                                        <div style="padding:10px 0;border-top: 1px solid rgba(0,0,0,0.05);display: flex">
+                                            <div style="width:25%;margin-right: 12px;text-align: right;font-weight: bold;">When done, notify</div>
+                                            <div style="width:73%">
+                                                <input style="border: none" id="singlenotify" type='text' placeholder='Type names to assign...' class='flexdatalists' data-min-length='1' multiple='multiple' data-selection-required='1' data-value-property='value' list='notify_names' name='language22'>
+                                                <datalist id="notify_names">
+                                                    {% for user in output['user_data'] %}
+                                                        <option value="{{user._id}}">{{user.person_name}}</option>
+                                                    {% endfor %}
+                                                </datalist> 
+                                            </div>
+                                        </div>
+                                        <div style="padding:10px 0;border-top: 1px solid rgba(0,0,0,0.05);display: flex">
+                                            <div style="width:25%;margin-right: 12px;text-align: right;font-weight: bold;">Due on</div>
+                                            <div style="width:73%;display: flex;flex-direction: column">
+                                                <div style="cursor:pointer">
+                                                    <input name="time" id="no-due" type="radio" style="outline:none;margin-right: 8px"><label id="nodue" style="margin:0;cursor: pointer" for="no-due">No due</label>
+                                                </div>
+                                                <div style="cursor:pointer;display: flex">
+                                                    <input name="time" id="specific-date" type="radio" style="outline:none;margin-right: 8px"> <label id="specificdate" style="margin:0;cursor: pointer" for="specific-date">A specific day</label><input id="specific-input" style="border:none;display: none" type="date">
+                                                </div>
+                                                <div style="cursor:pointer; display: flex">
+                                                    <input name="time" id="multiple-days" type="radio" style="outline:none;margin-right: 8px"> <label id="multipledays" style="margin:0;cursor: pointer" for="multiple-days">Runs for multiple days</label>
+                                                    <span id="multiple-input" style="display:none">
+                                                        <input id="multiple-start" style="border:none" type="date"> to <input id="multiple-end" style="border:none" type="date">
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <button onclick="updateSingleTodo('{{output.task_id}}')" type="button" style="background-color: #596568;color: #fff;border-radius: 24px;border: 1px solid #596568;padding: 8px 14px;font-size: 12px;">Save changes</button>
+                                        <button onclick="canceltodoedit()" type="button" style="background-color: #fff;color: #596568ff;border-radius: 24px;border: 1px solid #596568;padding: 8px 14px;font-size: 12px;margin-left: 8px;outline: none">Discard changes</button>
+                                    </div>
+                                    <!-- end of todo edit form -->
+                                    <div id="single-todo-display">
+                                        <div style="padding:10px 0;display: flex">
+                                            <div style="width:25%;margin-right: 12px;text-align: right"></div>
+                                            <div id="description" style="width:73%;color: #283c46;font-weight: bold;font-size: 26px;">{{output.description}}</div>
+                                        </div>
+                                        <div id="assigned_static" style="padding:10px 0;border-top: 1px solid rgba(0,0,0,0.05);display: flex;">
+                                            <div style="width:25%;margin-right: 12px;text-align: right;font-weight: bold;">Assigned to</div>
+                                            {% for user in output['assigned_to'] %}
+                                                <div style="width:auto;display: inline-block;padding: 2px 8px;background: #eee;border-radius: 4px;color: #777;line-height: 20px;margin-right: 8px">{{ user.person_name }}</div>
+                                            {% endfor %}
+                                        </div>
+                                        <div style="padding:10px 0;border-top: 1px solid rgba(0,0,0,0.05);display: flex">
+                                            <div style="width:25%;margin-right: 12px;text-align: right;font-weight: bold;">When done, notify</div>
+                                            {% for user in output['notify_to'] %}
+                                                <div style="width:auto;display: inline-block;padding: 2px 8px;background: #eee;border-radius: 4px;color: #777;line-height: 20px;margin-right: 8px">{{ user.person_name }}</div>
+                                            {% endfor %}
+                                        </div>
+                                        <div id="due_static" style="padding:10px 0;border-top: 1px solid rgba(0,0,0,0.05);display: flex">
+                                            <div style="width:25%;margin-right: 12px;text-align: right;font-weight: bold;">Due on</div>
+                                            {% if(output.due.start == 'null') and (output.due.end == 'null') %}
+                                                <div style="width:73%">No due</div>
+                                            {% elif(output.due.start != 'null') and (output.due.end != 'null') %}
+                                                <div style="width:73%">{{output.due.start}} to {{output.due.end}}</div>
+                                            {% else %}
+                                                <div style="width:73%">{{output.due.end}}</div>
+                                            {% endif %}
+                                        </div>
+                                    </div>
+                                    <div class="discussion-text" style="padding:50px 0 15px 0;border-top: 1px solid rgba(0,0,0,0.05);display: flex">
+                                        <div class="discussion-text" style="margin-right: 12px;font-weight: bold;font-size: 26px">Discussion</div>
+                                    </div>
+                                    <div style="background-color:#faf8f7;padding:20px;border-radius: 20px;">
+                                        <input id="discussion-input" onclick="showDiscussionDiv()" type="text" placeholder="Add a comment..." style="width:100%;border: 1px solid #d9d9d9;border-radius:4px;padding:8px;cursor: pointer">
+                                        <div id="discussion-div" style="display:none">
+                                            <textarea class="todo-discussion-input" id="editpage-text-area" placeholder="Add a comment here..."></textarea>
+                                            <button type="button" style="background-color: #596568;color: #fff;border: 1px solid #596568;border-radius: 24px;padding:4px 14px;">Add this comment</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm col-md" style="padding:0"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm col-md" style="padding:0">
+            </div>
+        </div>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+        <script src="https://unpkg.com/easymde/dist/easymde.min.js"></script>
+        <script src="/static/common_lib/js/flexdatalist.js"></script>
+        <script src="/static/js/register-page.js"></script>
+        <script>
+            var rawData = "{{output | safe}}"
+            var filteredColon = rawData.replace(/'/g, '"');
+            var userDetails = JSON.parse(filteredColon)
+            for(i=0;i < userDetails.assigned_to.length;i++){
+                assigned_data.push(userDetails.assigned_to[i]._id)
+            }
+            for(i=0;i < userDetails.notify_to.length;i++){
+                notify_data.push(userDetails.notify_to[i]._id)
+            }
+            $(document).ready(() => {
+                $("#tododescription").val(userDetails.description) 
+                $("#singleassigned").val(assigned_data)
+                $("#singlenotify").val(notify_data)
+                if(userDetails.due.start == "null"  && userDetails.due.end == 'null'){
+                    var x = document.getElementById("no-due")
+                    x.checked = true;
+                }
+                if(userDetails.due.start == "null"  && userDetails.due.end != 'null'){
+                    var x = document.getElementById("specific-date")
+                    x.checked = true;
+                    $("#specific-input").css("display", "block")
+                    $("#specificdate").css("display", "none")
+                    $("#specific-input").val(userDetails.due.end) 
+                }
+                if(userDetails.due.start != "null" && userDetails.due.end != "null"){
+                    var x = document.getElementById("multiple-days")
+                    x.checked = true;
+                    $("#multiple-start").css("display", "block")
+                    $("#multipledays").css("display", "none")
+                    $("#multiple-start").val(userDetails.due.start)
+                    $("#multiple-end").val(userDetails.due.end) 
+                }
+            })
+        </script>
+    </body>
+</html>
